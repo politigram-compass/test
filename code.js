@@ -46,14 +46,14 @@ var maxCanDistance;
 var maxCanIndex;
 var count = -1;
 function calculatePfpDistances(){
-  for (var i = 0; i < 75; i++) {
+  for (var i = 0; i < 76; i++) {
     pfpXCoord =xCoords[i];
     pfpYCoord =yCoords[i];
     pfpZCoord =zCoords[i];
     distance =Math.pow((Math.pow((xCoord-pfpXCoord),2)+Math.pow((yCoord-pfpYCoord),2) + Math.pow((zCoord-zCoords[i]),2)),0.5);
     appendItem(distances,distance);
   }
-  for (var k = 0; k < 75; k++) {
+  for (var k = 0; k < 76; k++) {
     console.log(distances);
     maxDistance = distances[0];
     for (var j = 1; j < distances.length; j++) {
@@ -189,7 +189,7 @@ function showPfps(){
   }
 }
 function calculatePfpPlacement(){
-  for(var o = 0; o < 75; o++){
+  for(var o = 0; o < 76; o++){
     newX = (xCoords[o]*16)+148;
     if(newX <= 0){
       newX = newX + (0 - newX);
@@ -208,12 +208,12 @@ function calculatePfpPlacement(){
   } 
 }
 function createList(){
-  for(var d = 75; d > -1; d--){
+  for(var d = 76; d > -1; d--){
     insertItem(pfps,0,"pfp"+d);
   }
 }
 function sort(){
-  for(var f = 0; f < 76; f++){
+  for(var f = 0; f < 77; f++){
     if(pfps.indexOf("pfp" + f) == -1){
       showElement("pfp" + f);
     } else {
@@ -223,7 +223,7 @@ function sort(){
   }
 }
 function order(){
-  for(var h = 0; h < 76; h++){
+  for(var h = 0; h < 77; h++){
     setStyle("pfp" + h,"z-index: " + (pfps.indexOf("pfp" + h)+10));
   }
 }
@@ -1187,6 +1187,11 @@ onEvent("pfp74","click",function(){
 onEvent("pfp75","click",function(){
   setText("text_area67",usernames[75] + "'s results: (" + xCoords[75] + "," + yCoords[75] + "," + zCoords[75] + ")");
   setStyle("pfp75","z-index: " + depth);
+  depth++;
+});
+onEvent("pfp76","click",function(){
+  setText("text_area67",usernames[76] + "'s results: (" + xCoords[76] + "," + yCoords[76] + "," + zCoords[76] + ")");
+  setStyle("pfp76","z-index: " + depth);
   depth++;
 });
 onEvent("button6","click",function(){
