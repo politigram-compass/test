@@ -17,7 +17,7 @@ var distances = [];
 var maxDistance;
 var maxIndex;
 var sortedDistances = [];
-var usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbiden","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","hoppe.knighte","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","american_leoism","soc.leftist","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","libertarian.unity","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","sonofgotaland","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats"];
+var usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbiden","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","american_coalition_party","soc.leftist","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","libertarian.unity","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","sonofgotaland","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism"];
 var sortedUsernames = [];
 var pfpXCoord = 0;
 var pfpYCoord = 0;
@@ -25,12 +25,12 @@ var pfpZCoord = 0;
 var newX;
 var newY;
 var viability = 1;
-var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-2.88,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-3.75,-4.63,-2.90,-10.00,-1.58,2.25,1.17,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-4.50,-9.00,-9.75,-9.83,6.50,5.33,10.00,5.42,7.33,-0.08,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-9.00,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83];
-//             0    1    2    3      4     5    6     7    8     9     10    11   12   13   14   15   16     17    18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62     63    64    65    66   67   68   69    70   71   72    73    74    75    76         
-var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.13,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.70,3.50,-7.00,4.00,-3.50,-9.80,1.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,-8.00,-8.20,-8.20,-1.00,-9.30,-7.25,6.20,-6.20,-1.00,5.20,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-5.88,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90];
-//             0     1    2    3      4     5    6     7    8     9     10    11   12   13    14    15    16     17    18    19    20     21    22    23   24    25   26   27    28    29     30    31    32    33     34    35   36   37   38    39   40     41    42    43    44    45    46    47    48   49    50    51    52    53   54    55    56   57    58    59    60     61    62     63    64    65    66   67   68     69     70    71    72    73    74    75    76    
-var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-8.00,-10.00,7.10,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-9.00,0.00,-5.25,8.50,0.00,-8.00,-7.00,7.63,-5.00,-0.38,-1.20,-9.00,0.13,-7.10,-9.63,-5.80,-0.10,3.60,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,-3.00,-9.00,-9.20,-9.50,3.10,1.90,7.40,-3.80,5.00,7.60,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-10.00,4.00,4.00,0.00,-6.50,-10.00,-2.00,0.00,-6.60,-9.00,1.80,9.00];
-//             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76    
+var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-2.88,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-3.75,-4.63,-2.90,-10.00,-1.58,2.25,1.17,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-4.50,-9.00,-9.75,-9.83,6.50,4.50,10.00,5.42,7.33,-0.08,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-8.33,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83,-10.00];
+//             0    1    2    3      4     5    6     7    8     9     10    11   12   13   14   15   16     17    18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62     63    64    65    66   67   68   69    70   71   72    73    74    75    76    77         
+var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.13,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.70,3.50,-7.00,4.00,-3.50,-9.80,1.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,-8.00,-8.20,-8.20,-1.00,-9.30,-3.10,6.20,-6.20,-1.00,5.20,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-3.40,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90,3.00];
+//             0     1    2    3      4     5    6     7    8     9     10    11   12   13    14    15    16     17    18    19    20     21    22    23   24    25   26   27    28    29     30    31    32    33     34    35   36   37   38    39   40     41    42    43    44    45    46    47    48   49    50    51    52    53    54    55    56   57    58    59    60     61    62     63    64    65    66   67   68     69     70    71    72    73    74    75    76  77  
+var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-8.00,-10.00,7.10,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-9.00,0.00,-5.25,8.50,0.00,-8.00,-7.00,7.63,-5.00,-0.38,-1.20,-9.00,0.13,-7.10,-9.63,-5.80,-0.10,3.60,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,-3.00,-9.00,-9.20,-9.50,3.10,4.60,7.40,-3.80,5.00,7.60,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-2.00,0.00,-6.60,-9.00,1.80,9.00,-9.50];
+//             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77  
 var canXCoords = [1.80,-0.60,-4.20,2.00,1.30,0.90,-2.20,-0.10,0.80,-1.30,3.40];
 var canYCoords = [1.10,-0.50,-2.60,3.50,2.20,2.70,-0.30,0.70,1.50,1.00,3.70];
 var canZCoords = [-0.95,-3.10,-6.90,1.50,-1.10,-1.00,-5.80,-3.20,-0.61,-3.45,5.85];
@@ -46,14 +46,14 @@ var maxCanDistance;
 var maxCanIndex;
 var count = -1;
 function calculatePfpDistances(){
-  for (var i = 0; i < 76; i++) {
+  for (var i = 0; i < 78; i++) {
     pfpXCoord =xCoords[i];
     pfpYCoord =yCoords[i];
     pfpZCoord =zCoords[i];
     distance =Math.pow((Math.pow((xCoord-pfpXCoord),2)+Math.pow((yCoord-pfpYCoord),2) + Math.pow((zCoord-zCoords[i]),2)),0.5);
     appendItem(distances,distance);
   }
-  for (var k = 0; k < 76; k++) {
+  for (var k = 0; k < 78; k++) {
     console.log(distances);
     maxDistance = distances[0];
     for (var j = 1; j < distances.length; j++) {
@@ -189,7 +189,7 @@ function showPfps(){
   }
 }
 function calculatePfpPlacement(){
-  for(var o = 0; o < 76; o++){
+  for(var o = 0; o <= 77; o++){
     newX = (xCoords[o]*16)+148;
     if(newX <= 0){
       newX = newX + (0 - newX);
@@ -208,12 +208,12 @@ function calculatePfpPlacement(){
   } 
 }
 function createList(){
-  for(var d = 76; d > -1; d--){
+  for(var d = 77; d >= 0; d--){
     insertItem(pfps,0,"pfp"+d);
   }
 }
 function sort(){
-  for(var f = 0; f < 77; f++){
+  for(var f = 0; f <= 77; f++){
     if(pfps.indexOf("pfp" + f) == -1){
       showElement("pfp" + f);
     } else {
@@ -223,7 +223,7 @@ function sort(){
   }
 }
 function order(){
-  for(var h = 0; h < 77; h++){
+  for(var h = 0; h <= 77; h++){
     setStyle("pfp" + h,"z-index: " + (pfps.indexOf("pfp" + h)+10));
   }
 }
@@ -699,7 +699,7 @@ onEvent("button4", "click", function(){
   maxDistance;
   maxIndex;
   sortedDistances = [];
-  usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbiden","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","hoppe.knighte","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","american_leoism","soc.leftist","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","libertarian.unity","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","sonofgotaland","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_"];
+  usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbiden","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","american_coalition_party","soc.leftist","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","libertarian.unity","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","sonofgotaland","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism"];
   pfpXCoord = 0;
   pfpYCoord = 0;
   pfpZCoord = 0;
@@ -1202,6 +1202,11 @@ onEvent("pfp75","click",function(){
 onEvent("pfp76","click",function(){
   setText("text_area67",usernames[76] + "'s results: (" + xCoords[76] + "," + yCoords[76] + "," + zCoords[76] + ")");
   setStyle("pfp76","z-index: " + depth);
+  depth++;
+});
+onEvent("pfp77","click",function(){
+  setText("text_area67",usernames[77] + "'s results: (" + xCoords[77] + "," + yCoords[77] + "," + zCoords[77] + ")");
+  setStyle("pfp77","z-index: " + depth);
   depth++;
 });
 onEvent("button6","click",function(){
