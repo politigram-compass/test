@@ -145,6 +145,7 @@ function plotResults(){
   write("Your results: (" + xCoord + "," + yCoord + "," + zCoord+")");
   setPosition("dot",xPosition,yPosition);
   setPosition("bar",zPosition,364);
+  hideElement("bar2");
 }
 function nextQuestion(){
   num = num + 1;
@@ -735,6 +736,7 @@ onEvent("radio_button1","click",function(){
   hideElement("slider65");
   hidePfps();
   hideCandidates();
+  hideElement("bar2");
 });
 onEvent("radio_button2","click",function(){
   showElement("images");
@@ -743,6 +745,7 @@ onEvent("radio_button2","click",function(){
   hideElement("slider65");
   hidePfps();
   hideCandidates();
+  hideElement("bar2");
 });
 onEvent("radio_button4","click",function(){
   hideElement("images");
@@ -751,6 +754,7 @@ onEvent("radio_button4","click",function(){
   hideElement("slider65");
   hidePfps();
   hideCandidates();
+  hideElement("bar2");
 });
 onEvent("radio_button5","click",function(){
   hideElement("images");
@@ -767,6 +771,7 @@ onEvent("radio_button3","click",function(){
   hideElement("slider65");
   hidePfps();
   showCandidates();
+  hideElement("bar2");
 });
 onEvent("username0","click",function(){
   if(count == 0){
@@ -822,392 +827,548 @@ onEvent("pfp0","click",function(){
   setText("text_area67",usernames[0] + "'s results: (" + xCoords[0] + "," + yCoords[0] + "," + zCoords[0] + ")");
   setStyle("pfp0","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[0]*16+160,364);
 });
 onEvent("pfp1","click",function(){
   setText("text_area67",usernames[1] + "'s results: (" + xCoords[1] + "," + yCoords[1] + "," + zCoords[1] + ")");
   setStyle("pfp1","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[1]*16+160,364);
 });
 onEvent("pfp2","click",function(){
   setText("text_area67",usernames[2] + "'s results: (" + xCoords[2] + "," + yCoords[2] + "," + zCoords[2] + ")");
   setStyle("pfp2","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[2]*16+160,364);
 });
 onEvent("pfp3","click",function(){
   setText("text_area67",usernames[3] + "'s results: (" + xCoords[3] + "," + yCoords[3] + "," + zCoords[3] + ")");
   setStyle("pfp3","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[3]*16+160,364);
 });
 onEvent("pfp4","click",function(){
   setText("text_area67",usernames[4] + "'s results: (" + xCoords[4] + "," + yCoords[4] + "," + zCoords[4] + ")");
   setStyle("pfp4","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[4]*16+160,364);
 });
 onEvent("pfp5","click",function(){
   setText("text_area67",usernames[5] + "'s results: (" + xCoords[5] + "," + yCoords[5] + "," + zCoords[5] + ")");
   setStyle("pfp5","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[5]*16+160,364);
 });
 onEvent("pfp6","click",function(){
   setText("text_area67",usernames[6] + "'s results: (" + xCoords[6] + "," + yCoords[6] + "," + zCoords[6] + ")");
   setStyle("pfp6","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[6]*16+160,364);
 });
 onEvent("pfp7","click",function(){
   setText("text_area67",usernames[7] + "'s results: (" + xCoords[7] + "," + yCoords[7] + "," + zCoords[7] + ")");
   setStyle("pfp7","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[7]*16+160,364);
 });
 onEvent("pfp8","click",function(){
   setText("text_area67",usernames[8] + "'s results: (" + xCoords[8] + "," + yCoords[8] + "," + zCoords[8] + ")");
   setStyle("pfp8","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[8]*16+160,364);
 });
 onEvent("pfp9","click",function(){
   setText("text_area67",usernames[9] + "'s results: (" + xCoords[9] + "," + yCoords[9] + "," + zCoords[9] + ")");
   setStyle("pfp9","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[9]*16+160,364);
 });
 onEvent("pfp10","click",function(){
   setText("text_area67",usernames[10] + "'s results: (" + xCoords[10] + "," + yCoords[10] + "," + zCoords[10] + ")");
   setStyle("pfp10","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[10]*16+160,364);
 });
 onEvent("pfp11","click",function(){
   setText("text_area67",usernames[11] + "'s results: (" + xCoords[11] + "," + yCoords[11] + "," + zCoords[11] + ")");
   setStyle("pfp11","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[11]*16+160,364);
 });
 onEvent("pfp12","click",function(){
   setText("text_area67",usernames[12] + "'s results: (" + xCoords[12] + "," + yCoords[12] + "," + zCoords[12] + ")");
   setStyle("pfp12","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[12]*16+160,364);
 });
 onEvent("pfp13","click",function(){
   setText("text_area67",usernames[13] + "'s results: (" + xCoords[13] + "," + yCoords[13] + "," + zCoords[13] + ")");
   setStyle("pfp13","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[13]*16+160,364);
 });
 onEvent("pfp14","click",function(){
   setText("text_area67",usernames[14] + "'s results: (" + xCoords[14] + "," + yCoords[14] + "," + zCoords[14] + ")");
   setStyle("pfp14","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[14]*16+160,364);
 });
 onEvent("pfp15","click",function(){
   setText("text_area67",usernames[15] + "'s results: (" + xCoords[15] + "," + yCoords[15] + "," + zCoords[15] + ")");
   setStyle("pfp15","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[15]*16+160,364);
 });
 onEvent("pfp16","click",function(){
   setText("text_area67",usernames[16] + "'s results: (" + xCoords[16] + "," + yCoords[16] + "," + zCoords[16] + ")");
   setStyle("pfp16","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[16]*16+160,364);
 });
 onEvent("pfp17","click",function(){
   setText("text_area67",usernames[17] + "'s results: (" + xCoords[17] + "," + yCoords[17] + "," + zCoords[17] + ")");
   setStyle("pfp17","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[17]*16+160,364);
 });
 onEvent("pfp18","click",function(){
   setText("text_area67",usernames[18] + "'s results: (" + xCoords[18] + "," + yCoords[18] + "," + zCoords[18] + ")");
   setStyle("pfp18","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[18]*16+160,364);
 });
 onEvent("pfp19","click",function(){
   setText("text_area67",usernames[19] + "'s results: (" + xCoords[19] + "," + yCoords[19] + "," + zCoords[19] + ")");
   setStyle("pfp19","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[19]*16+160,364);
 });
 onEvent("pfp20","click",function(){
   setText("text_area67",usernames[20] + "'s results: (" + xCoords[20] + "," + yCoords[20] + "," + zCoords[20] + ")");
   setStyle("pfp20","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[20]*16+160,364);
 });
 onEvent("pfp21","click",function(){
   setText("text_area67",usernames[21] + "'s results: (" + xCoords[21] + "," + yCoords[21] + "," + zCoords[21] + ")");
   setStyle("pfp21","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[21]*16+160,364);
 });
 onEvent("pfp22","click",function(){
   setText("text_area67",usernames[22] + "'s results: (" + xCoords[22] + "," + yCoords[22] + "," + zCoords[22] + ")");
   setStyle("pfp22","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[22]*16+160,364);
 });
 onEvent("pfp23","click",function(){
   setText("text_area67",usernames[23] + "'s results: (" + xCoords[23] + "," + yCoords[23] + "," + zCoords[23] + ")");
   setStyle("pfp23","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[23]*16+160,364);
 });
 onEvent("pfp24","click",function(){
   setText("text_area67",usernames[24] + "'s results: (" + xCoords[24] + "," + yCoords[24] + "," + zCoords[24] + ")");
   setStyle("pfp24","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[24]*16+160,364);
 });
 onEvent("pfp25","click",function(){
   setText("text_area67",usernames[25] + "'s results: (" + xCoords[25] + "," + yCoords[25] + "," + zCoords[25] + ")");
   setStyle("pfp25","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[25]*16+160,364);
 });
 onEvent("pfp26","click",function(){
   setText("text_area67",usernames[26] + "'s results: (" + xCoords[26] + "," + yCoords[26] + "," + zCoords[26] + ")");
   setStyle("pfp26","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[26]*16+160,364);
 });
 onEvent("pfp27","click",function(){
   setText("text_area67",usernames[27] + "'s results: (" + xCoords[27] + "," + yCoords[27] + "," + zCoords[27] + ")");
   setStyle("pfp27","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[27]*16+160,364);
 });
 onEvent("pfp28","click",function(){
   setText("text_area67",usernames[28] + "'s results: (" + xCoords[28] + "," + yCoords[28] + "," + zCoords[28] + ")");
   setStyle("pfp28","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[28]*16+160,364);
 });
 onEvent("pfp29","click",function(){
   setText("text_area67",usernames[29] + "'s results: (" + xCoords[29] + "," + yCoords[29] + "," + zCoords[29] + ")");
   setStyle("pfp29","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[29]*16+160,364);
 });
 onEvent("pfp30","click",function(){
   setText("text_area67",usernames[30] + "'s results: (" + xCoords[30] + "," + yCoords[30] + "," + zCoords[30] + ")");
   setStyle("pfp30","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[30]*16+160,364);
 });
 onEvent("pfp31","click",function(){
   setText("text_area67",usernames[31] + "'s results: (" + xCoords[31] + "," + yCoords[31] + "," + zCoords[31] + ")");
   setStyle("pfp31","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[31]*16+160,364);
 });
 onEvent("pfp32","click",function(){
   setText("text_area67",usernames[32] + "'s results: (" + xCoords[32] + "," + yCoords[32] + "," + zCoords[32] + ")");
   setStyle("pfp32","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[32]*16+160,364);
 });
 onEvent("pfp33","click",function(){
   setText("text_area67",usernames[33] + "'s results: (" + xCoords[33] + "," + yCoords[33] + "," + zCoords[31] + ")");
   setStyle("pfp33","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[33]*16+160,364);
 });
 onEvent("pfp34","click",function(){
   setText("text_area67",usernames[34] + "'s results: (" + xCoords[34] + "," + yCoords[34] + "," + zCoords[34] + ")");
   setStyle("pfp34","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[34]*16+160,364);
 });
 onEvent("pfp35","click",function(){
   setText("text_area67",usernames[35] + "'s results: (" + xCoords[35] + "," + yCoords[35] + "," + zCoords[35] + ")");
   setStyle("pfp35","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[35]*16+160,364);
 });
 onEvent("pfp36","click",function(){
   setText("text_area67",usernames[36] + "'s results: (" + xCoords[36] + "," + yCoords[36] + "," + zCoords[36] + ")");
   setStyle("pfp36","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[36]*16+160,364);
 });
 onEvent("pfp37","click",function(){
   setText("text_area67",usernames[37] + "'s results: (" + xCoords[37] + "," + yCoords[37] + "," + zCoords[37] + ")");
   setStyle("pfp37","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[37]*16+160,364);
 });
 onEvent("pfp38","click",function(){
   setText("text_area67",usernames[38] + "'s results: (" + xCoords[38] + "," + yCoords[38] + "," + zCoords[38] + ")");
   setStyle("pfp38","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[38]*16+160,364);
 });
 onEvent("pfp39","click",function(){
   setText("text_area67",usernames[39] + "'s results: (" + xCoords[39] + "," + yCoords[39] + "," + zCoords[39] + ")");
   setStyle("pfp39","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[39]*16+160,364);
 });
 onEvent("pfp40","click",function(){
   setText("text_area67",usernames[40] + "'s results: (" + xCoords[40] + "," + yCoords[40] + "," + zCoords[40] + ")");
   setStyle("pfp40","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[40]*16+160,364);
 });
 onEvent("pfp41","click",function(){
   setText("text_area67",usernames[41] + "'s results: (" + xCoords[41] + "," + yCoords[41] + "," + zCoords[41] + ")");
   setStyle("pfp41","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[41]*16+160,364);
 });
 onEvent("pfp42","click",function(){
   setText("text_area67",usernames[42] + "'s results: (" + xCoords[42] + "," + yCoords[42] + "," + zCoords[42] + ")");
   setStyle("pfp42","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[42]*16+160,364);
 });
 onEvent("pfp43","click",function(){
   setText("text_area67",usernames[43] + "'s results: (" + xCoords[43] + "," + yCoords[43] + "," + zCoords[43] + ")");
   setStyle("pfp43","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[43]*16+160,364);
 });
 onEvent("pfp44","click",function(){
   setText("text_area67",usernames[44] + "'s results: (" + xCoords[44] + "," + yCoords[44] + "," + zCoords[44] + ")");
   setStyle("pfp44","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[44]*16+160,364);
 });
 onEvent("pfp45","click",function(){
   setText("text_area67",usernames[45] + "'s results: (" + xCoords[45] + "," + yCoords[45] + "," + zCoords[45] + ")");
   setStyle("pfp45","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[45]*16+160,364);
 });
 onEvent("pfp46","click",function(){
   setText("text_area67",usernames[46] + "'s results: (" + xCoords[46] + "," + yCoords[46] + "," + zCoords[46] + ")");
   setStyle("pfp46","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[46]*16+160,364);
 });
 onEvent("pfp47","click",function(){
   setText("text_area67",usernames[47] + "'s results: (" + xCoords[47] + "," + yCoords[47] + "," + zCoords[47] + ")");
   setStyle("pfp47","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[47]*16+160,364);
 });
 onEvent("pfp48","click",function(){
   setText("text_area67",usernames[48] + "'s results: (" + xCoords[48] + "," + yCoords[48] + "," + zCoords[48] + ")");
   setStyle("pfp48","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[48]*16+160,364);
 });
 onEvent("pfp49","click",function(){
   setText("text_area67",usernames[49] + "'s results: (" + xCoords[49] + "," + yCoords[49] + "," + zCoords[49] + ")");
   setStyle("pfp49","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[49]*16+160,364);
 });
 onEvent("pfp50","click",function(){
   setText("text_area67",usernames[50] + "'s results: (" + xCoords[50] + "," + yCoords[50] + "," + zCoords[50] + ")");
   setStyle("pfp50","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[50]*16+160,364);
 });
 onEvent("pfp51","click",function(){
   setText("text_area67",usernames[51] + "'s results: (" + xCoords[51] + "," + yCoords[51] + "," + zCoords[51] + ")");
   setStyle("pfp51","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[51]*16+160,364);
 });
 onEvent("pfp52","click",function(){
   setText("text_area67",usernames[52] + "'s results: (" + xCoords[52] + "," + yCoords[52] + "," + zCoords[52] + ")");
   setStyle("pfp52","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[52]*16+160,364);
 });
 onEvent("pfp53","click",function(){
   setText("text_area67",usernames[53] + "'s results: (" + xCoords[53] + "," + yCoords[53] + "," + zCoords[53] + ")");
   setStyle("pfp53","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[53]*16+160,364);
 });
 
 onEvent("pfp54","click",function(){
   setText("text_area67",usernames[54] + "'s results: (" + xCoords[54] + "," + yCoords[54] + "," + zCoords[54] + ")");
   setStyle("pfp54","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[54]*16+160,364);
 });
 onEvent("pfp55","click",function(){
   setText("text_area67",usernames[55] + "'s results: (" + xCoords[55] + "," + yCoords[55] + "," + zCoords[55] + ")");
   setStyle("pfp55","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[55]*16+160,364);
 });
 onEvent("pfp56","click",function(){
   setText("text_area67",usernames[56] + "'s results: (" + xCoords[56] + "," + yCoords[56] + "," + zCoords[56] + ")");
   setStyle("pfp56","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[56]*16+160,364);
 });
 onEvent("pfp57","click",function(){
   setText("text_area67",usernames[57] + "'s results: (" + xCoords[57] + "," + yCoords[57] + "," + zCoords[57] + ")");
   setStyle("pfp57","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[57]*16+160,364);
 });
 onEvent("pfp58","click",function(){
   setText("text_area67",usernames[58] + "'s results: (" + xCoords[58] + "," + yCoords[58] + "," + zCoords[58] + ")");
   setStyle("pfp58","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[58]*16+160,364);
 });
 onEvent("pfp59","click",function(){
   setText("text_area67",usernames[59] + "'s results: (" + xCoords[59] + "," + yCoords[59] + "," + zCoords[59] + ")");
   setStyle("pfp59","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[59]*16+160,364);
 });
 onEvent("pfp60","click",function(){
   setText("text_area67",usernames[60] + "'s results: (" + xCoords[60] + "," + yCoords[60] + "," + zCoords[60] + ")");
   setStyle("pfp60","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[60]*16+160,364);
 });
 onEvent("pfp61","click",function(){
   setText("text_area67",usernames[61] + "'s results: (" + xCoords[61] + "," + yCoords[61] + "," + zCoords[61] + ")");
   setStyle("pfp1","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[61]*16+160,364);
 });
 onEvent("pfp62","click",function(){
   setText("text_area67",usernames[62] + "'s results: (" + xCoords[62] + "," + yCoords[62] + "," + zCoords[62] + ")");
   setStyle("pfp62","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[62]*16+160,364);
 });
 onEvent("pfp63","click",function(){
   setText("text_area67",usernames[63] + "'s results: (" + xCoords[63] + "," + yCoords[63] + "," + zCoords[63] + ")");
   setStyle("pfp63","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[63]*16+160,364);
 });
 onEvent("pfp64","click",function(){
   setText("text_area67",usernames[64] + "'s results: (" + xCoords[64] + "," + yCoords[64] + "," + zCoords[64] + ")");
   setStyle("pfp64","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[64]*16+160,364);
 });
 onEvent("pfp65","click",function(){
   setText("text_area67",usernames[65] + "'s results: (" + xCoords[65] + "," + yCoords[65] + "," + zCoords[65] + ")");
   setStyle("pfp65","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[65]*16+160,364);
 });
 onEvent("pfp66","click",function(){
   setText("text_area67",usernames[66] + "'s results: (" + xCoords[66] + "," + yCoords[66] + "," + zCoords[66] + ")");
   setStyle("pfp66","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[66]*16+160,364);
 });
 onEvent("pfp67","click",function(){
   setText("text_area67",usernames[67] + "'s results: (" + xCoords[67] + "," + yCoords[67] + "," + zCoords[67] + ")");
   setStyle("pfp67","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[67]*16+160,364);
 });
 onEvent("pfp68","click",function(){
   setText("text_area67",usernames[68] + "'s results: (" + xCoords[68] + "," + yCoords[68] + "," + zCoords[68] + ")");
   setStyle("pfp68","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[68]*16+160,364);
 });
 onEvent("pfp69","click",function(){
   setText("text_area67",usernames[69] + "'s results: (" + xCoords[69] + "," + yCoords[69] + "," + zCoords[69] + ")");
   setStyle("pfp69","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[69]*16+160,364);
 });
 onEvent("pfp70","click",function(){
   setText("text_area67",usernames[70] + "'s results: (" + xCoords[70] + "," + yCoords[70] + "," + zCoords[70] + ")");
   setStyle("pfp70","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[70]*16+160,364);
 });
 onEvent("pfp71","click",function(){
   setText("text_area67",usernames[71] + "'s results: (" + xCoords[71] + "," + yCoords[71] + "," + zCoords[71] + ")");
   setStyle("pfp71","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[71]*16+160,364);
 });
 onEvent("pfp72","click",function(){
   setText("text_area67",usernames[72] + "'s results: (" + xCoords[72] + "," + yCoords[72] + "," + zCoords[72] + ")");
   setStyle("pfp72","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[72]*16+160,364);
 });
 onEvent("pfp73","click",function(){
   setText("text_area67",usernames[73] + "'s results: (" + xCoords[73] + "," + yCoords[73] + "," + zCoords[73] + ")");
   setStyle("pfp73","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[73]*16+160,364);
 });
 onEvent("pfp74","click",function(){
   setText("text_area67",usernames[74] + "'s results: (" + xCoords[74] + "," + yCoords[74] + "," + zCoords[74] + ")");
   setStyle("pfp74","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[74]*16+160,364);
 });
 onEvent("pfp75","click",function(){
   setText("text_area67",usernames[75] + "'s results: (" + xCoords[75] + "," + yCoords[75] + "," + zCoords[75] + ")");
   setStyle("pfp75","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[75]*16+160,364);
 });
 onEvent("pfp76","click",function(){
   setText("text_area67",usernames[76] + "'s results: (" + xCoords[76] + "," + yCoords[76] + "," + zCoords[76] + ")");
   setStyle("pfp76","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[76]*16+160,364);
 });
 onEvent("pfp77","click",function(){
   setText("text_area67",usernames[77] + "'s results: (" + xCoords[77] + "," + yCoords[77] + "," + zCoords[77] + ")");
   setStyle("pfp77","z-index: " + depth);
   depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[77]*16+160,364);
 });
 onEvent("button6","click",function(){
   previousQuestion();
