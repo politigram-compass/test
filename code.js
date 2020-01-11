@@ -46,14 +46,14 @@ var maxCanDistance;
 var maxCanIndex;
 var count = -1;
 function calculatePfpDistances(){
-  for (var i = 0; i < 90; i++) {
+  for (var i = 0; i < 89; i++) {
     pfpXCoord =xCoords[i];
     pfpYCoord =yCoords[i];
     pfpZCoord =zCoords[i];
     distance =Math.pow((Math.pow((xCoord-pfpXCoord),2)+Math.pow((yCoord-pfpYCoord),2) + Math.pow((zCoord-zCoords[i]),2)),0.5);
     appendItem(distances,distance);
   }
-  for (var k = 0; k < 90; k++) {
+  for (var k = 0; k < 89; k++) {
     console.log(distances);
     maxDistance = distances[0];
     for (var j = 1; j < distances.length; j++) {
@@ -190,7 +190,7 @@ function showPfps(){
   }
 }
 function calculatePfpPlacement(){
-  for(var o = 0; o <= 89; o++){
+  for(var o = 0; o <= 88; o++){
     newX = (xCoords[o]*16)+148;
     if(newX <= 0){
       newX = newX + (0 - newX);
@@ -209,12 +209,12 @@ function calculatePfpPlacement(){
   } 
 }
 function createList(){
-  for(var d = 89; d >= 0; d--){
+  for(var d = 88; d >= 0; d--){
     insertItem(pfps,0,"pfp"+d);
   }
 }
 function sort(){
-  for(var f = 0; f <= 89; f++){
+  for(var f = 0; f <= 88; f++){
     if(pfps.indexOf("pfp" + f) == -1){
       showElement("pfp" + f);
     } else {
@@ -224,7 +224,7 @@ function sort(){
   }
 }
 function order(){
-  for(var h = 0; h <= 89; h++){
+  for(var h = 0; h <= 88; h++){
     setStyle("pfp" + h,"z-index: " + (pfps.indexOf("pfp" + h)+10));
   }
 }
