@@ -17,8 +17,14 @@ var distances = [];
 var maxDistance;
 var maxIndex;
 var sortedDistances = [];
-var usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","the_southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbidenorpete","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","union.inter","republitarian_","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","independent.american","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism","american_coalition_v2","anarchist_leafeon","deep.fried.tyrannicide","genz.politics","kashmarxi","let_me_barter_btch","libertarian_atheist_","marxist_horizons","pennsylvania_progressive","somewhatleftistscum","supermarxismbros"];
-console.log("Username number: " + usernames.indexOf("independent.american"));
+var usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","the_southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbidenorpete","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","union.inter","republitarian_","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","shoe0nhead","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism","american_coalition_v2","anarchist_leafeon","deep.fried.tyrannicide","genz.politics","kashmarxi","let_me_barter_btch","libertarian_atheist_","marxist_horizons","pennsylvania_progressive","somewhatleftistscum","supermarxismbros","independent.american","comrade_sacha","possumtwostillpossumin","american.marxist","proletarian.flame","redneck.anarchist","thelaurenchen"];
+console.log("independent.american: " + usernames.indexOf("independent.american"));
+console.log("\npossumtwostillpossumin: " + usernames.indexOf("possumtwostillpossumin"));
+console.log("\nredneck.anarchist: " + usernames.indexOf("redneck.anarchist"));
+console.log("\ncomrade_sacha: " + usernames.indexOf("comrade_sacha"));
+console.log("\namerican.marxist: " + usernames.indexOf("american.marxist"));
+console.log("\nproletarian.flame: " + usernames.indexOf("proletarian.flame"));
+console.log("\npennsylvania_progressive: " + usernames.indexOf("pennsylvania_progressive"));
 var sortedUsernames = [];
 var pfpXCoord = 0;
 var pfpYCoord = 0;
@@ -26,11 +32,11 @@ var pfpZCoord = 0;
 var newX;
 var newY;
 var viability = 1;
-var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-5.00,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-3.75,-4.63,-2.90,-10.00,-1.58,2.25,-5.83,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-5.90,-9.00,-9.75,-9.83,6.50,4.50,10.00,5.42,7.33,0.75,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-8.33,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83,-10.00,-1.83,-9.92,4.75,-8.92,-9.33,-2.08,1.00,-10.00,-6.25,-9.67,-8.58];
+var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-5.00,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-7.43,-4.63,-2.90,-10.00,-1.58,2.25,-5.83,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-5.90,-9.00,-9.75,-9.83,6.50,4.50,10.00,5.42,7.33,-3.50,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-8.33,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83,-10.00,-1.83,-9.92,4.75,-8.92,-9.33,-2.08,1.00,-10.00,-6.25,-9.67,-8.58,2.17,-10.00,-9.80,-7.50,-8.50,1.25,6.58];
 //             0    1    2    3      4     5    6     7    8     9     10    11   12   13   14   15   16     17    18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36    37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62     63    64    65    66   67   68   69    70   71   72    73    74    75    76    77     78    79    80    81    82    83    84    85    86    87    88    89       
-var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.30,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.70,3.50,-7.00,4.00,-3.50,-9.80,5.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,10.00,-8.20,-8.20,-1.00,-9.30,-3.10,6.20,-6.20,-1.00,-4.20,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-3.40,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90,3.00,4.60,-8.30,-7.70,-10.00,-8.00,-10.00,-9.70,-5.50,-3.50,-7.60,-1.90];
+var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.30,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.90,3.50,-7.00,4.00,-3.50,-9.80,5.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,10.00,-8.20,-8.20,-1.00,-9.30,-3.10,6.20,-6.20,-1.00,-2.50,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-3.40,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90,3.00,4.60,-8.30,-7.70,-10.00,-8.00,-10.00,-9.70,-5.50,-3.50,-7.60,-1.90,-1.40,4.40,-9.00,-2.80,-6.80,-10.00,1.10];
 //             0     1    2    3      4     5    6     7    8     9     10    11   12   13    14    15    16     17    18    19    20     21    22    23   24    25   26   27    28    29     30    31    32    33     34    35   36   37   38    39   40     41    42    43    44    45    46    47    48   49    50    51    52    53    54    55    56   57    58    59    60     61    62     63    64    65    66   67   68     69     70    71    72    73    74    75    76  77  78   79   80    81     82    83     84    85    86    87      88  89
-var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-9.00,-10.00,7.10,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-9.00,0.00,-5.25,8.50,0.00,-8.00,-7.00,7.63,-5.00,-0.38,-1.20,-9.00,0.13,-7.10,-9.63,-5.80,-0.10,-3.10,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,7.00,-9.00,-9.20,-9.50,3.10,4.60,7.40,-3.80,5.00,-3.40,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-2.00,0.00,-6.60,-9.00,1.80,9.00,-9.50,7.20,-10.00,4.40,-10.00,-8.80,-5.50,-5.40,-10.00,-6.50,-10.00,-9.50];
+var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-9.00,-10.00,7.10,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-9.00,0.00,-5.25,8.50,0.00,-8.00,-7.00,7.63,-5.00,-0.38,-1.20,-9.40,0.13,-7.10,-9.63,-5.80,-0.10,-3.10,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,7.00,-9.00,-9.20,-9.50,3.10,4.60,7.40,-3.80,5.00,-4.40,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-2.00,0.00,-6.60,-9.00,1.80,9.00,-9.50,7.20,-10.00,4.40,-10.00,-8.80,-5.50,-5.40,-10.00,-6.50,-10.00,-9.50,-1.60,-3.80,-8.10,-7.20,-8.60,-1.60,5.50];
 //             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77  78    79    80    81    82    83    84    85      86    87    88    89
 var canXCoords = [1.80,-0.60,-4.20,2.00,1.30,0.90,-2.20,-0.10,0.80,-1.30,3.40];
 var canYCoords = [1.10,-0.50,-2.60,3.50,2.20,2.70,-0.30,0.70,1.50,1.00,3.70];
@@ -47,14 +53,14 @@ var maxCanDistance;
 var maxCanIndex;
 var count = -1;
 function calculatePfpDistances(){
-  for (var i = 0; i < 89; i++) {
+  for (var i = 0; i < 96; i++) {
     pfpXCoord =xCoords[i];
     pfpYCoord =yCoords[i];
     pfpZCoord =zCoords[i];
     distance =Math.pow((Math.pow((xCoord-pfpXCoord),2)+Math.pow((yCoord-pfpYCoord),2) + Math.pow((zCoord-zCoords[i]),2)),0.5);
     appendItem(distances,distance);
   }
-  for (var k = 0; k < 89; k++) {
+  for (var k = 0; k < 96; k++) {
     console.log(distances);
     maxDistance = distances[0];
     for (var j = 1; j < distances.length; j++) {
@@ -191,7 +197,7 @@ function showPfps(){
   }
 }
 function calculatePfpPlacement(){
-  for(var o = 0; o <= 88; o++){
+  for(var o = 0; o <= 95; o++){
     newX = (xCoords[o]*16)+148;
     if(newX <= 0){
       newX = newX + (0 - newX);
@@ -210,12 +216,12 @@ function calculatePfpPlacement(){
   } 
 }
 function createList(){
-  for(var d = 88; d >= 0; d--){
+  for(var d = 95; d >= 0; d--){
     insertItem(pfps,0,"pfp"+d);
   }
 }
 function sort(){
-  for(var f = 0; f <= 88; f++){
+  for(var f = 0; f <= 95; f++){
     if(pfps.indexOf("pfp" + f) == -1){
       showElement("pfp" + f);
     } else {
@@ -225,7 +231,7 @@ function sort(){
   }
 }
 function order(){
-  for(var h = 0; h <= 88; h++){
+  for(var h = 0; h <= 95; h++){
     setStyle("pfp" + h,"z-index: " + (pfps.indexOf("pfp" + h)+10));
   }
 }
@@ -701,7 +707,7 @@ onEvent("button4", "click", function(){
   maxDistance;
   maxIndex;
   sortedDistances = [];
-  usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","the_southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbidenorpete","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","american_coalition_party","republitarian_","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","independent.american","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism"];
+  usernames = ["teen.politics.official","charlemagnes_corner","rightwingism","leftistbaby","progressive.politico","feldsteinphilosophy","the_southern_leftist","tread.not","teen.politics.official","social_liberals","max_stirner_fanpage","makeliberalismclassicalagain","deafpatriot","angryamericans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","virginiaforbidenorpete","right_wing_imperial","anarchistunity","texansocialdem","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie.liberty","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","union.inter","republitarian_","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","major_tomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","neoreactionism","not_a_domestic_terrorist","refoundingfather","independent.american","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","american_nationalist.party","new.libertarianism","missourian_ancaps","art.n.politics","the.driptator","soviet.chronicles_","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism","american_coalition_v2","anarchist_leafeon","deep.fried.tyrannicide","genz.politics","kashmarxi","let_me_barter_btch","libertarian_atheist_","marxist_horizons","pennsylvania_progressive","somewhatleftistscum","supermarxismbros","redneck.anarchist","comrade_sacha","possumtwostillpossumin","american.marxist","proletarian.flame"];
   pfpXCoord = 0;
   pfpYCoord = 0;
   pfpZCoord = 0;
@@ -1454,6 +1460,48 @@ onEvent("pfp89","click",function(){
   depth++;
   showElement("bar2");
   setPosition("bar2",zCoords[89]*16+160,364);
+});
+onEvent("pfp90","click",function(){
+  setText("text_area67",usernames[90] + "'s results: (" + xCoords[90] + "," + yCoords[90] + "," + zCoords[90] + ")");
+  setStyle("pfp90","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[90]*16+160,364);
+});
+onEvent("pfp91","click",function(){
+  setText("text_area67",usernames[91] + "'s results: (" + xCoords[91] + "," + yCoords[91] + "," + zCoords[91] + ")");
+  setStyle("pfp91","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[91]*16+160,364);
+});
+onEvent("pfp92","click",function(){
+  setText("text_area67",usernames[92] + "'s results: (" + xCoords[92] + "," + yCoords[92] + "," + zCoords[92] + ")");
+  setStyle("pfp92","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[92]*16+160,364);
+});
+onEvent("pfp93","click",function(){
+  setText("text_area67",usernames[93] + "'s results: (" + xCoords[93] + "," + yCoords[93] + "," + zCoords[93] + ")");
+  setStyle("pfp93","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[93]*16+160,364);
+});
+onEvent("pfp94","click",function(){
+  setText("text_area67",usernames[94] + "'s results: (" + xCoords[94] + "," + yCoords[94] + "," + zCoords[94] + ")");
+  setStyle("pfp94","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[94]*16+160,364);
+});
+onEvent("pfp95","click",function(){
+  setText("text_area67",usernames[95] + "'s results: (" + xCoords[95] + "," + yCoords[95] + "," + zCoords[95] + ")");
+  setStyle("pfp95","z-index: " + depth);
+  depth++;
+  showElement("bar2");
+  setPosition("bar2",zCoords[95]*16+160,364);
 });
 onEvent("button6","click",function(){
   previousQuestion();
