@@ -1637,7 +1637,7 @@ onEvent("button8","click",function(){
   setScreen("buildScreen");
 });
 onEvent("button10","click",function(){
-  open("gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
+  open("http://gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
 });
 onEvent("slider65","input",function(){
   for(var e = 0; e < getProperty("slider65","value"); e++){
