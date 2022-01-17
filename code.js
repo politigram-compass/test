@@ -1637,7 +1637,7 @@ onEvent("button8","click",function(){
   setScreen("buildScreen");
 });
 onEvent("button10","click",function(){
-  open("http://gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
+  open("gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
 });
 onEvent("slider65","input",function(){
   for(var e = 0; e < getProperty("slider65","value"); e++){
@@ -1659,14 +1659,6 @@ onEvent("button12","click",function(){
 onEvent("button13","click",function(){
   clearCanvas();
   setScreen("buildScreen");
-});
-onEvent("button14","click",function(){
-  checkTLViability();
-  if(viability == 1){
-    setScreen("timelineResults");
-    createCanvas("canvas2");
-    previewTL();
-  }
 });
 onEvent("paypal","click",function(){
   open("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lippie.liberty@gmail.com&lc=US&no_note=0&item_name=Help+me+continue+to+make+the+Politigram+Compass+the+only+political+test+specific+to+Politigram+(and+buy+my+college+textbooks)!&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted");
