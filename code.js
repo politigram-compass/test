@@ -26,9 +26,9 @@ var pfpZCoord = 0;
 var newX;
 var newY;
 var viability = 1;
-var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-5.00,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-7.43,-4.63,-2.90,-10.00,-1.58,2.25,-5.83,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-5.90,-9.00,-9.75,-9.83,6.50,4.50,10.00,5.42,7.33,-3.50,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-8.33,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83,-10.00,-1.83,-8.52,4.75,-8.92,-9.33,-2.08,1.00,-10.00,-6.25,-9.67,-8.58,2.17,-10.00,-9.80,-7.50,-8.50,1.25,6.58];
+var xCoords = [1.50,0.50,1.10,-10.00,-2.88,2.50,-3.88,8.88,-4.00,-5.00,-9.00,4.17,4.83,7.50,8.60,4.42,-10.00,-9.00,-4.13,-0.20,-0.25,-0.38,-0.13,4.00,-4.58,1.88,8.13,-3.00,3.00,10.00,-7.43,-4.63,-2.90,-10.00,-1.58,2.25,-5.83,2.50,-4.33,7.80,9.00,5.17,-9.67,0.67,4.83,-2.17,-3.17,-6.17,3.00,-5.90,-9.00,-9.75,-9.83,6.50,4.50,10.00,5.42,7.33,-3.50,-2.92,-10.00,-9.00,-10.00,-2.92,-5.75,-8.33,5.00,6.00,5.20,6.75,-9.00,1.50,-7.00,-4.83,-8.75,-0.67,-0.83,-10.00,-1.83,-8.50,4.75,-8.92,-9.33,-2.08,1.00,-10.00,-6.25,-9.67,-8.58,2.17,-10.00,-9.80,-7.50,-8.50,1.25,6.58];
 //             0    1    2    3      4     5    6     7    8     9     10    11   12   13   14   15   16     17    18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36    37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62     63    64    65    66   67   68   69    70   71   72    73    74    75    76    77     78    79    80    81    82    83    84    85    86    87    88    89       
-var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.30,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.90,3.50,-7.00,4.00,-3.50,-9.80,5.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,10.00,-8.20,-8.20,-1.00,-9.30,-3.10,6.20,-6.20,-1.00,-2.50,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-3.40,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90,3.00,4.60,-8.30,-7.70,-10.00,-8.00,-10.00,-9.70,-5.50,-3.50,-7.60,-1.90,-1.40,4.40,-9.00,-2.80,-6.80,-10.00,1.10];
+var yCoords = [-8.38,7.60,7.00,0.00,-0.63,1.13,-1.38,-2.50,-3.20,-5.30,-7.75,0.30,-8.60,-8.13,-8.13,-1.00,-10.00,-8.38,-8.60,-9.10,-10.00,2.00,4.13,-9.00,-2.00,-7.75,7.88,-3.00,-1.25,-10.00,-8.90,3.50,-7.00,4.00,-3.50,-9.80,5.80,2.80,-8.40,-10.00,-10.00,-7.70,-7.90,-2.80,-3.40,5.30,-1.60,-1.10,5.40,10.00,-8.20,-8.20,-1.00,-9.30,-3.10,6.20,-6.20,-1.00,-2.50,-3.50,-10.00,-4.00,-1.88,-1.50,-3.60,-3.40,-7.00,-0.88,-10.00,-10.00,-2.00,-6.00,4.00,-3.20,-6.25,7.30,5.90,3.00,4.60,-8.80,-7.70,-10.00,-8.00,-10.00,-9.70,-5.50,-3.50,-7.60,-1.90,-1.40,4.40,-9.00,-2.80,-6.80,-10.00,1.10];
 //             0     1    2    3      4     5    6     7    8     9     10    11   12   13    14    15    16     17    18    19    20     21    22    23   24    25   26   27    28    29     30    31    32    33     34    35   36   37   38    39   40     41    42    43    44    45    46    47    48   49    50    51    52    53    54    55    56   57    58    59    60     61    62     63    64    65    66   67   68     69     70    71    72    73    74    75    76  77  78   79   80    81     82    83     84    85    86    87      88  89
 var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-9.00,-10.00,7.10,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-9.00,0.00,-5.25,8.50,0.00,-8.00,-7.00,7.63,-5.00,-0.38,-1.20,-9.40,0.13,-7.10,-9.63,-5.80,-0.10,-3.10,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,7.00,-9.00,-9.20,-9.50,3.10,4.60,7.40,-3.80,5.00,-4.40,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-2.00,0.00,-6.60,-9.00,1.80,9.00,-9.50,7.20,-10.00,4.40,-10.00,-8.80,-5.50,-5.40,-10.00,-6.50,-10.00,-9.50,-1.60,-3.80,-8.10,-7.20,-8.60,-1.60,5.50];
 //             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77  78    79    80    81    82    83    84    85      86    87    88    89
@@ -178,6 +178,9 @@ function previousQuestion(){
     showElement(currentSlider);
     console.log(currentQuest);
     showElement(currentQuest);
+  } else {
+    setScreen("welcomeScreen");
+    num = 0;
   }
 }
 function hidePfps(){
@@ -230,6 +233,7 @@ function order(){
   }
 }
 function checkViability(){
+  viability = 1;
   for (var k = 1; k < 13; k++) {
     var x = getNumber("xInput" + k);
     if((x.length > 4)||(x > 10)||(x < -10)){
@@ -259,6 +263,37 @@ function checkViability(){
     }
   }
 }
+function checkTLViability(){
+  viability = 1;
+  for (var k = 1; k < 13; k++) {
+    var x = getNumber("xTLInput" + k);
+    if((x.length > 4)||(x > 10)||(x < -10)){
+      setProperty("xInput" + k,"text-color","red");
+      viability = 0;
+    }
+  }
+  for (var j = 1; j < 13; j++) {
+    var y = getNumber("yTLInput" + j);
+    if((y.length > 4)||(y > 10)||(y < -10)){
+      setProperty("yInput" + j,"text-color","red");
+      viability = 0;
+    }
+  }
+  for (var q = 1; q < 13; q++) {
+    var z = getNumber("zTLInput" + q);
+    if((z.length > 4)||(z > 10)||(z < -10)){
+      setProperty("zInput" + q,"text-color","red");
+      viability = 0;
+    }
+  }
+  for (var e = 1; e < 13; e++) {
+    var n = getText("timeTLInput" + e);
+    if(n.length > 19){
+      setProperty("zInput" + q,"text-color","red");
+      viability = 0;
+    }
+  }
+}
 function preview(){
     showElement("button13");
     for (var r = 1; r < 13; r++) {
@@ -274,6 +309,83 @@ function preview(){
       }
       setText("name"+r,getText("nameInput"+r));
     }
+}
+function previewTL(){
+    showElement("button13");
+    var xPosArr = [];
+    var yPosArr = [];
+    var monthArr = [];
+    var yearArr = [];
+    var r = 1;
+    while((getText("timeTLInput" + r) != "")&&(r < 13)) {
+      var xTLPosition =(getNumber("xTLInput" + r)*16)+160;
+      var yTLPosition = (getNumber("yTLInput" + r)*-16)+225;
+      var time = getText("timeTLInput" + r);
+      appendItem(monthArr,Number(time[0]+time[1]));
+      var year = Number(time[2]+time[3]);
+      if (year < 21){
+        year += 2000;
+      } else {
+        year += 1900;
+      }
+      appendItem(yearArr,year);
+      /*
+      if(((getNumber("xTLInput" + r)*16)+138) < 0){
+      setPosition("time"+r,0,(getNumber("yTLInput" + r)*-16)+203);
+            } else if(((getNumber("xTLInput" + r)*16)+138) + (time.length*7.5) > 320){
+      setPosition("time"+r,((getNumber("xTLInput" + r)*16)+138)-(((getNumber("xTLInput" + r)*16)+138) + (name.length*7.5) - 320),(getNumber("yInput" + r)*-16)+203);
+      } else {
+      setPosition("time"+r,(getNumber("xTLInput" + r)*16)+138,(getNumber("yTLInput" + r)*-16)+203);
+      }
+      setText("time"+r,name);
+      */
+      appendItem(xPosArr,xTLPosition);
+      appendItem(yPosArr,yTLPosition);
+      r++;
+    }
+    console.log(xPosArr);
+    console.log(yPosArr);
+    console.log(monthArr);
+    console.log(yearArr);
+    setPosition("dot2",xPosArr[0],yPosArr[0]);
+    var j = monthArr[0];
+    var currEntry = 0;
+    var currX = 0;
+    var currY = 0;
+    for(var i = 0; i < (yearArr[yearArr.length-1]-yearArr[0]); i++){
+    var endMonth = 13;
+    var currYear = yearArr[0]+i;
+    while(j < endMonth){
+        if(yearArr.indexOf(currYear) != -1){
+          currEntry = yearArr.indexOf(currYear);
+        } else {
+          while(yearArr.indexOf(currYear) == -1){
+            currYear--;
+          }
+          currEntry = yearArr.indexOf(currYear);
+        }
+        if(currEntry != yearArr.length-1){
+          if(yearArr[currEntry] != yearArr[currEntry+1]){
+            currX = getXPosition("dot2") + (xPosArr[currEntry+1]-xPosArr[currEntry])/(12-monthArr[currEntry]+monthArr[currEntry+1]+((yearArr[currEntry+1]-yearArr[currEntry]-1)*12));
+            currY = getYPosition("dot2") + (yPosArr[currEntry+1]-yPosArr[currEntry])/(12-monthArr[currEntry]+monthArr[currEntry+1]+((yearArr[currEntry+1]-yearArr[currEntry]-1)*12));
+          } else {
+            currX = getXPosition("dot2") + (xPosArr[currEntry+1]-xPosArr[currEntry])/(monthArr[currEntry+1]-monthArr[currEntry]);
+            currY = getYPosition("dot2") + (yPosArr[currEntry+1]-yPosArr[currEntry])/(monthArr[currEntry+1]-monthArr[currEntry]);
+          }
+        } else {
+          currX = xPosArr[currEntry];
+          currY = yPosArr[currEntry];
+        }
+        setPosition("dot2",currX,currY);
+        console.log("position updated");
+        if(i == (yearArr[0]-yearArr[yearArr.length-1])-1){
+          endMonth = monthArr[monthArr.length-1];
+        }
+      j++;
+    }
+    j = 0;
+    }
+    
 }
 function showCandidates(){
   for (var p = 0; p < 11; p++) {
@@ -773,6 +885,26 @@ onEvent("radio_button3","click",function(){
   hidePfps();
   showCandidates();
   hideElement("bar2");
+});
+onEvent("radio_button6","click",function(){
+  showElement("symbols2");
+  hideElement("images2");
+  hideElement("text2");
+});
+onEvent("radio_button7","click",function(){
+  hideElement("symbols2");
+  showElement("images2");
+  hideElement("text2");
+});
+onEvent("radio_button8","click",function(){
+  hideElement("symbols2");
+  hideElement("images2");
+  showElement("text2");
+});
+onEvent("radio_button9","click",function(){
+  hideElement("symbols2");
+  hideElement("images2");
+  hideElement("text2");
 });
 onEvent("username0","click",function(){
   if(count == 0){
@@ -1504,6 +1636,9 @@ onEvent("button6","click",function(){
 onEvent("button8","click",function(){
   setScreen("buildScreen");
 });
+onEvent("button10","click",function(){
+  open("http://gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
+});
 onEvent("slider65","input",function(){
   for(var e = 0; e < getProperty("slider65","value"); e++){
     /* appendItem(pfps,pfps[0]); */
@@ -1524,6 +1659,14 @@ onEvent("button12","click",function(){
 onEvent("button13","click",function(){
   clearCanvas();
   setScreen("buildScreen");
+});
+onEvent("button14","click",function(){
+  checkTLViability();
+  if(viability == 1){
+    setScreen("timelineResults");
+    createCanvas("canvas2");
+    previewTL();
+  }
 });
 onEvent("paypal","click",function(){
   open("https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lippie.liberty@gmail.com&lc=US&no_note=0&item_name=Help+me+continue+to+make+the+Politigram+Compass+the+only+political+test+specific+to+Politigram+(and+buy+my+college+textbooks)!&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted");
