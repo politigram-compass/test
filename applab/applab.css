@@ -41,9 +41,9 @@ h2 {
   font-weight: normal; }
 
 a {
-  color: #0596CE; }
+  color: #0596ce; }
   a:hover {
-    color: #0596CE;
+    color: #0596ce;
     background: none; }
 
 strong {
@@ -1003,7 +1003,7 @@ html[dir="RTL"] .prompt-icon-cell {
     margin: 0; }
   #showVersionsModal td {
     vertical-align: middle; }
-  #showVersionsModal tr:nth-child(even) {
+  #showVersionsModal tr.highlight {
     background-color: #ebe8f1; }
   #showVersionsModal .template-level-warning {
     font-family: 'Gotham 7r', sans-serif;
@@ -2144,7 +2144,7 @@ div#visualizationResizeBar {
   cursor: pointer; }
 
 .chooseAssetDropdownOption {
-  color: #0596CE;
+  color: #0596ce;
   text-decoration: underline; }
 
 *[contenteditable] {
