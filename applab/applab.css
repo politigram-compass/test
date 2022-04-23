@@ -1156,7 +1156,7 @@ html[dir="RTL"] .prompt-icon-cell {
     html[dir=rtl] #sharing .feedback-image {
       float: right; }
   #sharing div {
-    margin: 10px 0; }
+    margin: 5px 0; }
     #sharing div.sharing-content {
       margin-left: 195px;
       margin-right: 25px; }
@@ -1215,11 +1215,10 @@ html[dir="RTL"] .prompt-icon-cell {
     width: calc(100% - 70px);
     padding: 10px;
     cursor: text; }
-  #sharing #sharing-input-copy-button {
+  #sharing #sharing-dialog-copy-button {
     margin-top: 1px;
-    width: 40px;
     box-sizing: border-box; }
-  #sharing .sharing-input-copy-button-shared {
+  #sharing .sharing-dialog-copy-button-shared {
     background-color: #a69bc1; }
   #sharing #copy-button {
     max-width: 100px; }

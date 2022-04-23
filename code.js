@@ -1644,7 +1644,7 @@ onEvent("button8","click",function(){
   setScreen("buildScreen");
 });
 onEvent("button10","click",function(){
-  open("http://gigmachine:9988/webapps/home/session.html?app=PolitigramCompass");
+  setScreen("aboutScreen");
 });
 onEvent("slider65","input",function(){
   for(var e = 0; e < getProperty("slider65","value"); e++){
@@ -1706,4 +1706,22 @@ onEvent("can9","click",function(){
 });
 onEvent("can10","click",function(){
   setText("text_area67",canNames[10] + "'s results: (" + canXCoords[10] + "," + canYCoords[10] + "," + canZCoords[10] + ")");
+});
+onEvent("button15", "click", function( ) {
+	open("https://www.youtube.com/channel/UCAlumeBQWQiEMCI9ydG6gGg");
+});
+onEvent("button11", "click", function( ) {
+	setScreen("disclaimerScreen");
+});
+onEvent("button14", "click", function( ) {
+	setScreen("aboutAScreen");
+});
+onEvent("button16", "click", function( ) {
+	setScreen("aboutScreen");
+});
+onEvent("button17", "click", function( ) {
+	setScreen("welcomeScreen");
+});
+onEvent("button18", "click", function( ) {
+	setScreen("aboutScreen");
 });
