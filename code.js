@@ -819,23 +819,6 @@ onEvent("button4", "click", function(){
   pfpZCoord = 0;
   count = 0;
 });
-onEvent("button7", "click", function(){
-  setText("text_area65","Results also consider z coordinates.");
-  calculateCandidateDistances();
-  setScreen("testResults2");
-  displayCandidateMatches();
-  sortedCanNames = [];
-  canNames = ["Amy Klobuchar","Tulsi Gabbard","Mike Gravel","Joe Biden","Cory Brooker","Kamala Harris","Bernie Sanders","Andrew Yang","Pete Butigieg","Elizabeth Warren","Donald Trump"];
-  canDistances = [];
-  sortedCanDistances = [];
-  candidateXCoord = 0;
-  candidateYCoord = 0;
-  candidateZCoord = 0;
-  canDistance;
-  maxCanDistance;
-  maxCanIndex;
-  count = 1;
-});
 onEvent("button5", "click", function(){
   setScreen("testResults");
   if(count == 0){
@@ -848,7 +831,7 @@ onEvent("radio_button1","click",function(){
   hideElement("labels");
   hideElement("slider65");
   hidePfps();
-  hideCandidates();
+  hideElement("dp");
   hideElement("bar2");
 });
 onEvent("radio_button2","click",function(){
@@ -857,7 +840,7 @@ onEvent("radio_button2","click",function(){
   hideElement("labels");
   hideElement("slider65");
   hidePfps();
-  hideCandidates();
+  hideElement("dp");
   hideElement("bar2");
 });
 onEvent("radio_button4","click",function(){
@@ -866,7 +849,7 @@ onEvent("radio_button4","click",function(){
   showElement("labels");
   hideElement("slider65");
   hidePfps();
-  hideCandidates();
+  hideElement("dp");
   hideElement("bar2");
 });
 onEvent("radio_button5","click",function(){
@@ -875,7 +858,7 @@ onEvent("radio_button5","click",function(){
   hideElement("labels");
   showPfps();
   showElement("slider65");
-  hideCandidates();
+  hideElement("dp");
 });
 onEvent("radio_button3","click",function(){
   hideElement("images");
@@ -883,28 +866,32 @@ onEvent("radio_button3","click",function(){
   hideElement("labels");
   hideElement("slider65");
   hidePfps();
-  showCandidates();
+  showElement("dp");
   hideElement("bar2");
 });
 onEvent("radio_button6","click",function(){
   showElement("symbols2");
   hideElement("images2");
   hideElement("text2");
+  hideElement("dp");
 });
 onEvent("radio_button7","click",function(){
   hideElement("symbols2");
   showElement("images2");
   hideElement("text2");
+  hideElement("dp");
 });
 onEvent("radio_button8","click",function(){
   hideElement("symbols2");
   hideElement("images2");
   showElement("text2");
+  hideElement("dp");
 });
 onEvent("radio_button9","click",function(){
   hideElement("symbols2");
   hideElement("images2");
   hideElement("text2");
+  hideElement("dp");
 });
 onEvent("username0","click",function(){
   if(count == 0){
