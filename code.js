@@ -1697,6 +1697,9 @@ onEvent("can10","click",function(){
 onEvent("button15", "click", function( ) {
 	open("https://www.youtube.com/channel/UCAlumeBQWQiEMCI9ydG6gGg");
 });
+onEvent("button7", "click", function( ) {
+	open("https://www.instagram.com/politigram.compass/?hl=en");
+});
 onEvent("button11", "click", function( ) {
 	setScreen("disclaimerScreen");
 });
