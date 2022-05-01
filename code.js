@@ -35,6 +35,9 @@ var zCoords = [-9.00,9.50,9.00,-10.00,-8.00,0.25,-3.63,4.50,-8.00,-9.00,-10.00,7
 var canXCoords = [1.80,-0.60,-4.20,2.00,1.30,0.90,-2.20,-0.10,0.80,-1.30,3.40];
 var canYCoords = [1.10,-0.50,-2.60,3.50,2.20,2.70,-0.30,0.70,1.50,1.00,3.70];
 var canZCoords = [-0.95,-3.10,-6.90,1.50,-1.10,-1.00,-5.80,-3.20,-0.61,-3.45,5.85];
+var idXCoords = [-4.0,-9.0,-4.0,-8.0,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
+var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
+var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
 var canNames = ["Amy Klobuchar","Tulsi Gabbard","Mike Gravel","Joe Biden","Cory Brooker","Kamala Harris","Bernie Sanders","Andrew Yang","Pete Butigieg","Elizabeth Warren","Donald Trump"];                            
 var sortedCanNames = [];
 var canDistances = [];
@@ -45,7 +48,7 @@ var candidateZCoord = 0;
 var canDistance;
 var maxCanDistance;
 var maxCanIndex;
-var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Luxemburgism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","Neoreactionism","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism"];                            
+var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Libertarian Marxism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","Neoreactionism","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism","Democratic Socialism"];                            
 var sortedIdNames = [];
 var idDistances = [];
 var sortedIdDistances = [];
@@ -55,9 +58,7 @@ var idZCoord = 0;
 var idDistance;
 var maxIdDistance;
 var maxIdIndex;
-var idXCoords = [-4.0,-9.0,-4.0,-8,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0];
-var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0];
-var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0];
+
 var count = -1;
 function calculatePfpDistances(){
   for (var i = 0; i < 96; i++) {
