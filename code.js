@@ -45,6 +45,19 @@ var candidateZCoord = 0;
 var canDistance;
 var maxCanDistance;
 var maxCanIndex;
+var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Luxemburgism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","Neoreactionism","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism"];                            
+var sortedIdNames = [];
+var idDistances = [];
+var sortedIdDistances = [];
+var idXCoord = 0;
+var idYCoord = 0;
+var idZCoord = 0;
+var idDistance;
+var maxIdDistance;
+var maxIdIndex;
+var idXCoords = [-4.0,-9.0,-4.0,-8,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0];
+var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0];
+var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0];
 var count = -1;
 function calculatePfpDistances(){
   for (var i = 0; i < 96; i++) {
@@ -110,6 +123,9 @@ function calculateCandidateDistances(){
     removeItem(canNames,maxCanIndex);
   }
 }
+function calculateIdDistances(){
+  
+}
 function displayCandidateMatches(){
   for (var l = 0; l < 10; l++) {
    setText("percent" + l,Math.round(100-(2.88675134595*sortedCanDistances[l])) + "%");
@@ -147,6 +163,31 @@ function plotResults(){
   setPosition("dot",xPosition,yPosition);
   setPosition("bar",zPosition,364);
   hideElement("bar2");
+  for (var i = 0; i < 29; i++) {
+    idXCoord = idXCoords[i];
+    idYCoord = idYCoords[i];
+    idZCoord = idZCoords[i];
+    idDistance = Math.pow((Math.pow((xCoord-idXCoord),2)+Math.pow((yCoord-idYCoord),2) + Math.pow((zCoord-idZCoord),2)),0.5);
+    appendItem(idDistances,idDistance);
+  }
+  for (var k = 0; k < 29; k++) {
+    maxIdDistance = idDistances[0];
+    for (var j = 1; j < idDistances.length; j++) {
+      if(maxIdDistance < idDistances[j]){
+        maxIdDistance = idDistances[j];
+        maxIdIndex = j;
+      }
+    }
+    if(maxIdDistance == idDistances[0]){
+      maxIdIndex = 0;
+    }
+    insertItem(sortedIdDistances,0,maxIdDistance);
+    insertItem(sortedIdNames,0,idNames[maxIdIndex]);
+    removeItem(idDistances,maxIdIndex);
+    removeItem(idNames,maxIdIndex);
+  }
+  console.log(sortedIdNames);
+  setText("idLabel",sortedIdNames[0]);
 }
 function nextQuestion(){
   num = num + 1;
@@ -795,6 +836,8 @@ onEvent("slider64","change",function(){
 onEvent("button2","click",function(){
   calculatePfpPlacement();
   hidePfps();
+  calculateIdDistances();
+  console.log(sortedIdNames);
   setScreen("testResults");
   setStyle("dot", "z-index: 10");
   hide();
