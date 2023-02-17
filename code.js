@@ -854,7 +854,7 @@ onEvent("button2","click",function(){
   endTest();
 });
 onEvent("button3","click",function(){
-	open("https://docs.google.com/forms/d/e/1FAIpQLSd1szLus3RhLJKcuIr9Qb4THGXqpt7Sy5-x9kmQbQzP93NGlQ/viewform?pli=1");
+	open("https://forms.gle/ytgywJgf6ihVGYqe7");
 });
 onEvent("button4", "click", function(){
   setText("text_area65","Results also consider z coordinates. \n Usernames will take you to their page.");
@@ -1798,87 +1798,5 @@ onEvent("button19", "click", function( ) {
 });
 onEvent("button17", "click", function( ) {
 	open("https://forms.gle/Q6XVXFZTL57ob8Kz7");
-});
-var saveKey;
-onEvent("generateSaveKey","click",function(){
- var valid = false;
- while (valid == false){
-  saveKey = randomNumber(100000,999999);
-  valid = true;
-  createRecord("KeyMasterTbl",{SAVEKEY:100000,XCOORD:0,YCOORD:0,ZCOORD:0});
-  readRecords("KeyMasterTbl", {}, function(records) {
-    for (var i =0; i < records.length; i++) {
-      if (saveKey==records[i].SAVEKEY) {
-	valid = false;
-      }
-     }
-   });
- }
- createRecord("KeyMasterTbl",{SAVEKEY:saveKey,XCOORD:xCoord,YCOORD:yCoord,ZCOORD:zCoord}, function(success) {
-  if(success){
-	setText("generateSaveKey",saveKey);
-  }
-  });
-});
-
-
-
-onEvent("enterSaveKey", "click", function( ) {
-  saveKey = getText("saveKey");
-  readRecords("KeyMasterTbl", {}, function(records) {
-    for (var i =0; i < records.length; i++) {
-      if (saveKey==records[i].SAVEKEY) {
-       setScreen("testResults");
-       calculatePfpPlacement();
-       hidePfps();
-       calculateIdDistances();
-       setStyle("dot", "z-index: 10");
-       hide();
-       xCoord = records[i].XCOORD;
-       yCoord = records[i].YCOORD;
-       zCoord = records[i].ZCOORD;
-       console.log("record: " + records[i].XCOORD);
-       xPosition = xCoord*16+155;
-yPosition = (-yCoord)*16+195;
-zPosition = zCoord*16+160;
-       setText("text_area67","\nYour results: (" + xCoord + "," + yCoord + "," + zCoord+")");
-  setPosition("dot",xPosition,yPosition);
-  setPosition("bar",zPosition,364);
-  hideElement("bar2");
-  for (var j = 0; j < 29; j++) {
-    idXCoord = idXCoords[j];
-    idYCoord = idYCoords[j];
-    idZCoord = idZCoords[j];
-    console.log("xCoord: " + xCoord + "yCoord: " + yCoord + "zCoord" + zCoord);
-    idDistance = Math.pow((Math.pow((xCoord-idXCoord),2)+Math.pow((yCoord-idYCoord),2) + Math.pow((zCoord-idZCoord),2)),0.5);
-    appendItem(idDistances,idDistance);
-  }
-  for (var k = 0; k < 29; k++) {
-    maxIdDistance = idDistances[0];
-    for (var l = 1; l < idDistances.length; l++) {
-      if(maxIdDistance < idDistances[l]){
-        maxIdDistance = idDistances[l];
-        maxIdIndex = l;
-      }
-    }
-    if(maxIdDistance == idDistances[0]){
-      maxIdIndex = 0;
-    }
-    insertItem(sortedIdDistances,0,maxIdDistance);
-    insertItem(sortedIdNames,0,idNames[maxIdIndex]);
-    removeItem(idDistances,maxIdIndex);
-    removeItem(idNames,maxIdIndex);
-  }
-  console.log(sortedIdNames);
-  setText("ideologyLabel",sortedIdNames[0]);
-       setText("saveKeyLabel",saveKey);
-      }else{
-        count = count +1;
-      }
-      if (count==records.length) {
-      write("Invalid Save Key");
-      }
-    }
-  });
 });
 
