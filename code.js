@@ -1732,39 +1732,6 @@ onEvent("button9","click",function(){
   clearCanvas();
   setScreen("welcomeScreen");
 });
-onEvent("can0","click",function(){
-  setText("text_area67",canNames[0] + "'s results: (" + canXCoords[0] + "," + canYCoords[0] + "," + canZCoords[0] + ")");
-});
-onEvent("can1","click",function(){
-  setText("text_area67",canNames[1] + "'s results: (" + canXCoords[1] + "," + canYCoords[1] + "," + canZCoords[1] + ")");
-});
-onEvent("can2","click",function(){
-  setText("text_area67",canNames[2] + "'s results: (" + canXCoords[2] + "," + canYCoords[2] + "," + canZCoords[2] + ")");
-});
-onEvent("can3","click",function(){
-  setText("text_area67",canNames[3] + "'s results: (" + canXCoords[3] + "," + canYCoords[3] + "," + canZCoords[3] + ")");
-});
-onEvent("can4","click",function(){
-  setText("text_area67",canNames[4] + "'s results: (" + canXCoords[4] + "," + canYCoords[4] + "," + canZCoords[4] + ")");
-});
-onEvent("can5","click",function(){
-  setText("text_area67",canNames[5] + "'s results: (" + canXCoords[5] + "," + canYCoords[5] + "," + canZCoords[5] + ")");
-});
-onEvent("can6","click",function(){
-  setText("text_area67",canNames[6] + "'s results: (" + canXCoords[6] + "," + canYCoords[6] + "," + canZCoords[6] + ")");
-});
-onEvent("can7","click",function(){
-  setText("text_area67",canNames[7] + "'s results: (" + canXCoords[7] + "," + canYCoords[7] + "," + canZCoords[7] + ")");
-});
-onEvent("can8","click",function(){
-  setText("text_area67",canNames[8] + "'s results: (" + canXCoords[8] + "," + canYCoords[8] + "," + canZCoords[8] + ")");
-});
-onEvent("can9","click",function(){
-  setText("text_area67",canNames[9] + "'s results: (" + canXCoords[9] + "," + canYCoords[9] + "," + canZCoords[9] + ")");
-});
-onEvent("can10","click",function(){
-  setText("text_area67",canNames[10] + "'s results: (" + canXCoords[10] + "," + canYCoords[10] + "," + canZCoords[10] + ")");
-});
 onEvent("button15", "click", function( ) {
 	open("https://www.youtube.com/channel/UCAlumeBQWQiEMCI9ydG6gGg");
 });
@@ -1774,14 +1741,11 @@ onEvent("button7", "click", function( ) {
 onEvent("button11", "click", function( ) {
 	setScreen("disclaimerScreen");
 });
-onEvent("button14", "click", function( ) {
-	setScreen("aboutAScreen");
+onEvent("button3", "click", function( ) {
+	setScreen("welcomeScreen");
 });
-onEvent("button16", "click", function( ) {
-	setScreen("aboutScreen");
-});
-onEvent("button18", "click", function( ) {
-	setScreen("aboutScreen");
+onEvent("button11", "click", function( ) {
+	setScreen("3DresultsScreen");
 });
 onEvent("button17", "click", function( ) {
 	open("https://forms.gle/Q6XVXFZTL57ob8Kz7");
