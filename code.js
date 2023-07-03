@@ -408,6 +408,14 @@ function preview(){
       setText("name"+r,getText("nameInput"+r));
     }
 }
+/*
+function previewMeme1(){
+  showElement("button19");
+  setFillColor("black");
+  setText("label46","me when I see the asking price for a house");
+  setPosition("label46",(-9*16)+138,(9*-16)+203);
+}
+*/
 function previewTL(){
     showElement("button13");
     var xPosArr = [];
@@ -485,6 +493,7 @@ function previewTL(){
     }
     
 }
+/*
 function showCandidates(){
   for (var p = 0; p < 11; p++) {
     showElement("can" + p);
@@ -495,6 +504,7 @@ function hideCandidates(){
     hideElement("can" + q);
   }
 }
+*/
 createList();
 order();
 onEvent("button1","click",function(){
