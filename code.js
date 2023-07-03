@@ -18,6 +18,7 @@ var maxDistance;
 var maxIndex;
 var sortedDistances = [];
 var usernames = ["teen.politics.official","charlemagnes_corner","seize_the_memes","batkoschizo","progressive.politico","feldsteinphilosophy","the_southern_leftist","liberty_son_76","teen.politics.official","social_liberals","max_stirner_fanpage_v2","old.right","deafpatriot","angry.americans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","reactionary.movement.v5","right_wing_imperial","anarchistunity","socialista.tejana","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie4solidarity","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","union.inter","proudly.we.hail","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","majortomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","tuckertarian","not_a_domestic_terrorist","refoundingfather","shoe0nhead","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","nationalist__party","new.libertarianism","missourian_ancaps","art.n.politics.v3","unorthodox.anarchist","soviet.chronicles_.v15","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism","american_coalition_v2","im_literally_melody","deep.fried.tyrannicide","genz.politics","kashmarxi","let_me_barter_btch","libertarian_atheist_","marxist_horizons","pennsylvania_progressive","bahamasball","unionizethehomeless","independent.american","comrade_sacha","possumtwostillpossumin","american.marxist","proletarian.flame","redneck.anarchist","thelaurenchen","puppers.against.capitalism","anarcho_bidenism_action","the.decadent.socialist2","sees.the.memes"];
+/*
 setImageURL("pfp0","https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/67764982_1550989088385934_3968337532810166272_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=110&_nc_ohc=No8H0lGy0TQAX_Ug1qp&edm=AId3EpQBAAAA&ccb=7-5&oh=00_AfBYmN6bqRRAIfPz2znGT_b5cgfaKmbea7mGC9w_czsjqw&oe=64A7678E&_nc_sid=f5838a");
 setImageURL("pfp2","https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/15538172_560718934128695_8844726783736545280_a.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=111&_nc_ohc=WbNBfBEhtkkAX9LyR3k&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfCWAtas0F6Yg_KYl0AFNepUn9GrzCRU4uLtmI22T5LpjA&oe=64A5E7B2&_nc_sid=ee9879");
 setImageURL("pfp3","https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/289149639_1647564595627327_1787364162451106836_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=MaN6dniHAzkAX_05WD3&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfB2k0ilU27wo56okv7nenho3N0LLRAW_P3fQMUbmMmyqg&oe=64A5EF5F&_nc_sid=ee9879");
@@ -65,8 +66,8 @@ setImageURL("pfp96","https://instagram.fosu2-2.fna.fbcdn.net/v/t51.2885-19/25356
 setImageURL("pfp97","https://instagram.fosu2-2.fna.fbcdn.net/v/t51.2885-19/123599021_432064671288685_6888222648334888166_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fosu2-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=sAVbWQYUy-UAX_QxPDy&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfBliYdn4T-LF_9dcnILhbHjwUvdpb5E4z5nczsBndtAsA&oe=64A68E6A&_nc_sid=ee9879");
 setImageURL("pfp98","https://instagram.fosu2-2.fna.fbcdn.net/v/t51.2885-19/136065699_919271071943677_1685392193930336865_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fosu2-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=9FbYfkTerA4AX_PBwXO&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfCGGGi5wjn9YUDVP064C5lISnYy1E5NjkF4gFCCzl8FoA&oe=64A61386&_nc_sid=ee9879");
 setImageURL("pfp99","https://instagram.fosu2-2.fna.fbcdn.net/v/t51.2885-19/336168598_508032671538553_9205468128430229381_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fosu2-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=U_JnINQtwMkAX815PH8&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBNNBXfd6ubGeSOa8AFQMLFwXtGJX-txsSX61kVT9stGA&oe=64A7D673&_nc_sid=8b3546");
+*/
 
-console.log(usernames.length);
 
 var sortedUsernames = [];
 var pfpXCoord = 0;
@@ -81,15 +82,11 @@ var yCoords = [-8.38,7.60,-3.20,-8.40,-0.63,1.13,-1.38,-10.00,-3.20,-5.30,-7.75,
 //             0     1    2    3      4     5    6     7    8     9     10    11   12   13    14    15    16     17    18    19    20     21    22    23   24    25   26   27    28    29     30    31    32    33     34    35   36   37   38    39   40     41    42    43    44    45    46    47    48   49    50    51    52    53    54    55    56   57    58    59    60     61    62     63    64    65    66   67   68     69     70    71    72    73    74    75    76  77  78   79     80    81     82    83     84    85    86    87      88  89
 var zCoords = [-9.00,9.50,-8.40,-9.70,-8.00,0.25,-3.63,-1.25,-8.00,-9.00,-10.00,7.00,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-6.70,0.00,8.30,8.50,0.00,-8.90,-7.00,7.63,-5.00,-0.38,-1.20,-9.10,0.13,-7.10,-9.10,-5.80,-0.10,-3.10,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,7.00,-9.00,-10.00,-9.50,3.10,4.60,6.20,-3.80,5.00,-4.40,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-9.10,0.00,-6.60,-9.00,1.80,9.00,-9.50,7.20,-10.00,4.40,-10.00,-8.80,-5.50,-5.40,-10.00,-6.50,-8.60,-9.50,-1.60,-3.80,-8.10,-7.20,-8.60,-1.60,5.50,-9.00,-7.10,-8.60,-10.00];
 //             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77     78    79    80    81    82    83    84    85      86    87    88    89
-console.log(xCoords.length);
-console.log(yCoords.length);
-console.log(zCoords.length);
+console.log(usernames.length + "=" + xCoords.length + "=" + yCoords.length + "=" + zCoords.length);
+/*
 var canXCoords = [1.80,-0.60,-4.20,2.00,1.30,0.90,-2.20,-0.10,0.80,-1.30,3.40];
 var canYCoords = [1.10,-0.50,-2.60,3.50,2.20,2.70,-0.30,0.70,1.50,1.00,3.70];
 var canZCoords = [-0.95,-3.10,-6.90,1.50,-1.10,-1.00,-5.80,-3.20,-0.61,-3.45,5.85];
-var idXCoords = [-4.0,-9.0,-4.0,-8.0,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
-var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
-var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
 var canNames = ["Amy Klobuchar","Tulsi Gabbard","Mike Gravel","Joe Biden","Cory Brooker","Kamala Harris","Bernie Sanders","Andrew Yang","Pete Butigieg","Elizabeth Warren","Donald Trump"];                            
 var sortedCanNames = [];
 var canDistances = [];
@@ -100,6 +97,10 @@ var candidateZCoord = 0;
 var canDistance;
 var maxCanDistance;
 var maxCanIndex;
+*/
+var idXCoords = [-4.0,-9.0,-4.0,-8.0,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
+var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
+var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
 var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Libertarian Marxism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","tuckertarian","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism","Democratic Socialism"];                            
 var sortedIdNames = [];
 var idDistances = [];
