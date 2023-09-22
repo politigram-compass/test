@@ -1992,6 +1992,24 @@ div.WireframeButtons_active {
 #manageAssetsModal {
   width: 800px;
   margin-left: -400px;
+}
+
+.modalFunctionEditorContainer svg {
+  position: absolute;
+  top: 50;
+  left: 0;
+  background: transparent !important;
+  pointer-events: none;
+}
+
+.modalFunctionEditorContainer svg .blocklyBlockCanvas,
+.modalFunctionEditorContainer .blocklyScrollbarVertical,
+.blocklyToolboxDiv {
+  pointer-events: visiblePainted;
+}
+
+.modalFunctionEditorContainer .injectionDiv {
+  pointer-events: none;
 }#debugResizeBar {
   width: 100%;
   height: 13px;

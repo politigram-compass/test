@@ -941,6 +941,7 @@ onEvent("radio_button1","click",function(){
   hideElement("bar2");
   showElement("idLabel");
   hideElement("button17");
+  hideElement("image3");
 });
 onEvent("radio_button2","click",function(){
   showElement("images");
@@ -951,6 +952,7 @@ onEvent("radio_button2","click",function(){
   hideElement("bar2");
   showElement("idLabel");
   hideElement("button17");
+  hideElement("image3");
 });
 onEvent("radio_button5","click",function(){
   hideElement("images");
@@ -961,14 +963,26 @@ onEvent("radio_button5","click",function(){
   showElement("button17");
   hideElement("idLabel");
   hideElement("label6");
+  hideElement("image3");
 });
 onEvent("radio_button3","click",function(){
   hideElement("images");
   hideElement("symbols");
-  hideElement("labels");
   hideElement("slider65");
   hidePfps();
   showElement("dp");
+  hideElement("bar2");
+  showElement("idLabel");
+  hideElement("button17");
+  hideElement("image3");
+});
+onEvent("radio_button4","click",function(){
+  hideElement("images");
+  hideElement("symbols");
+  hideElement("slider65");
+  hidePfps();
+  showElement("image3");
+  hideElement("dp");
   hideElement("bar2");
   showElement("idLabel");
   hideElement("button17");
