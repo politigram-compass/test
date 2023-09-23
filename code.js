@@ -83,11 +83,11 @@ var yCoords = [-8.38,7.60,-3.20,-8.40,-0.63,1.13,-1.38,-10.00,-3.20,-5.30,-7.75,
 var zCoords = [-9.00,9.50,-8.40,-9.70,-8.00,0.25,-3.63,-1.25,-8.00,-9.00,-10.00,7.00,-3.00,-6.00,4.00,-3.70,-10.00,-10.00,-9.00,-6.70,0.00,8.30,8.50,0.00,-8.90,-7.00,7.63,-5.00,-0.38,-1.20,-9.10,0.13,-7.10,-9.10,-5.80,-0.10,-3.10,4.00,-6.20,0.00,0.00,-1.90,-9.30,2.40,3.20,5.90,-3.90,-7.60,5.70,7.00,-9.00,-10.00,-9.50,3.10,4.60,6.20,-3.80,5.00,-4.40,-0.60,-5.00,-9.60,-2.50,-7.40,-4.50,-7.80,4.00,4.00,0.00,-6.50,-10.00,-9.10,0.00,-6.60,-9.00,1.80,9.00,-9.50,7.20,-10.00,4.40,-10.00,-8.80,-5.50,-5.40,-10.00,-6.50,-8.60,-9.50,-1.60,-3.80,-8.10,-7.20,-8.60,-1.60,5.50,-9.00,-7.10,-8.60,-10.00];
 //             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77     78    79    80    81    82    83    84    85      86    87    88    89
 console.log(usernames.length + "=" + xCoords.length + "=" + yCoords.length + "=" + zCoords.length);
-/*
-var canXCoords = [1.80,-0.60,-4.20,2.00,1.30,0.90,-2.20,-0.10,0.80,-1.30,3.40];
-var canYCoords = [1.10,-0.50,-2.60,3.50,2.20,2.70,-0.30,0.70,1.50,1.00,3.70];
-var canZCoords = [-0.95,-3.10,-6.90,1.50,-1.10,-1.00,-5.80,-3.20,-0.61,-3.45,5.85];
-var canNames = ["Amy Klobuchar","Tulsi Gabbard","Mike Gravel","Joe Biden","Cory Brooker","Kamala Harris","Bernie Sanders","Andrew Yang","Pete Butigieg","Elizabeth Warren","Donald Trump"];                            
+
+var canXCoords = [-0.60,-5.20,1.50,3.30,2.80,3.50,3.80];
+var canYCoords = [0.60,-0.60,3.00,3.50,5.70,6.50,5.60];
+var canZCoords = [-3.60,-7.20,1.50,5.10,8.10,8.40,7.95];
+var canNames = ["M. Williamson","Cornel West","Joe Biden","Chris Christie","Mike Pence","Ron Desantis","Donald Trump"];                            
 var sortedCanNames = [];
 var canDistances = [];
 var sortedCanDistances = [];
@@ -97,7 +97,7 @@ var candidateZCoord = 0;
 var canDistance;
 var maxCanDistance;
 var maxCanIndex;
-*/
+
 var idXCoords = [-4.0,-9.0,-4.0,-8.0,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
 var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
 var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
@@ -152,16 +152,17 @@ function displayPfpMatches(){
    console.log(sortedDistances);
   }
 }
-/*
+
 function calculateCandidateDistances(){
-  for (var i = 0; i < 11; i++) {
+  canDistances = [];
+  for (var i = 0; i < 7; i++) {
     candidateXCoord = canXCoords[i];
     candidateYCoord = canYCoords[i];
     candidateZCoord = canZCoords[i];
     canDistance = Math.pow((Math.pow((xCoord-candidateXCoord),2)+Math.pow((yCoord-candidateYCoord),2) + Math.pow((zCoord-candidateZCoord),2)),0.5);
     appendItem(canDistances,canDistance);
   }
-  for (var k = 0; k < 11; k++) {
+  for (var k = 0; k < 7; k++) {
     maxCanDistance = canDistances[0];
     for (var j = 1; j < canDistances.length; j++) {
       if(maxCanDistance < canDistances[j]){
@@ -179,13 +180,15 @@ function calculateCandidateDistances(){
     removeItem(canNames,maxCanIndex);
   }
 }
-*/
+
 function calculateIdDistances(){
   
 }
 function displayCandidateMatches(){
-  for (var l = 0; l < 10; l++) {
+  for (var l = 0; l < 7; l++) {
    setText("percent" + l,Math.round(100-(2.88675134595*sortedCanDistances[l])) + "%");
+   console.log(sortedCanNames);
+   console.log(sortedCanDistances);
    setText("username" + l,sortedCanNames[l]);
    setProperty("percent" + l,"text-color",rgb(sortedCanDistances[l]*10,(1/sortedCanDistances[l])*255,0));
    /* showElement("lpfp"+l);
@@ -911,6 +914,15 @@ onEvent("button2","click",function(){
   endTest();
 });
 onEvent("button4", "click", function(){
+  showElement("percent7");
+  showElement("percent8");
+  showElement("percent9");
+  showElement("label43");
+  showElement("label44");
+  showElement("label45");
+  showElement("username7");
+  showElement("username8");
+  showElement("username9");
   setText("text_area65","Results also consider z coordinates. \n Usernames will take you to their page.");
   calculatePfpDistances();
   setScreen("testResults2");
@@ -926,10 +938,33 @@ onEvent("button4", "click", function(){
   pfpZCoord = 0;
   count = 0;
 });
+onEvent("button19", "click", function(){
+  hideElement("percent7");
+  hideElement("percent8");
+  hideElement("percent9");
+  hideElement("label43");
+  hideElement("label44");
+  hideElement("label45");
+  hideElement("username7");
+  hideElement("username8");
+  hideElement("username9");
+  setText("text_area65","Results also consider z coordinates.");
+  calculateCandidateDistances();
+  setScreen("testResults2");
+  displayCandidateMatches();
+  canDistance;
+  canDistances = [];
+  maxCanDistance;
+  maxCanIndex;
+  sortedCanDistances = [];
+  canNames = ["M. Williamson","Cornel West","Joe Biden","Chris Christie","Mike Pence","Ron Desantis","Donald Trump"];                            
+  count = 0;
+});
 onEvent("button5", "click", function(){
   setScreen("testResults");
   if(count == 0){
     sortedUsernames = [];
+    sortedCanNames = [];
   }
 });
 onEvent("radio_button1","click",function(){
@@ -942,6 +977,9 @@ onEvent("radio_button1","click",function(){
   showElement("idLabel");
   hideElement("button17");
   hideElement("image3");
+  hideElement("button4");
+  hideElement("button19");
+  showElement("label6");
 });
 onEvent("radio_button2","click",function(){
   showElement("images");
@@ -953,6 +991,9 @@ onEvent("radio_button2","click",function(){
   showElement("idLabel");
   hideElement("button17");
   hideElement("image3");
+  hideElement("button4");
+  hideElement("button19");
+  showElement("label6");
 });
 onEvent("radio_button5","click",function(){
   hideElement("images");
@@ -962,10 +1003,13 @@ onEvent("radio_button5","click",function(){
   hideElement("dp");
   showElement("button17");
   hideElement("idLabel");
-  hideElement("label6");
   hideElement("image3");
+  showElement("button4");
+  hideElement("button19");
+  hideElement("label6");
 });
 onEvent("radio_button3","click",function(){
+  hideElement("button4");
   hideElement("images");
   hideElement("symbols");
   hideElement("slider65");
@@ -975,6 +1019,8 @@ onEvent("radio_button3","click",function(){
   showElement("idLabel");
   hideElement("button17");
   hideElement("image3");
+  hideElement("button19");
+  showElement("label6");
 });
 onEvent("radio_button4","click",function(){
   hideElement("images");
@@ -982,10 +1028,13 @@ onEvent("radio_button4","click",function(){
   hideElement("slider65");
   hidePfps();
   showElement("image3");
+  showElement("button19");
   hideElement("dp");
   hideElement("bar2");
-  showElement("idLabel");
+  hideElement("idLabel");
   hideElement("button17");
+  hideElement("button4");
+  hideElement("label6");
 });
 onEvent("radio_button6","click",function(){
   showElement("symbols2");
