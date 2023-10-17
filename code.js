@@ -84,8 +84,8 @@ var zCoords = [-9.00,9.50,-8.40,-9.70,-8.00,0.25,-3.63,-1.25,-8.00,-9.00,-10.00,
 //             0     1    2    3      4     5    6     7    8     9     10     11   12    13    14   15    16     17     18    19    20    21    22    23   24    25   26   27    28   29    30    31    32    33     34    35   36   37   38    39   40   41   42    43   44   45    46    47    48   49    50    51    52    53   54   55    56   57   58    59    60     61    62    63    64    65    66   67   68   69    70   71    72    73    74    75    76  77     78    79    80    81    82    83    84    85      86    87    88    89
 console.log(usernames.length + "=" + xCoords.length + "=" + yCoords.length + "=" + zCoords.length);
 
-var canXCoords = [-0.60,-5.20,1.50,3.30,2.80,3.50,3.80];
-var canYCoords = [0.60,-0.60,3.00,3.50,5.70,6.50,5.60];
+var canXCoords = [-0.60,-5.20,1.50,3.30,2.10,3.50,3.80];
+var canYCoords = [1.00,-0.60,3.00,3.50,5.70,6.50,5.60];
 var canZCoords = [-3.60,-7.20,1.50,5.10,8.10,8.40,7.95];
 var canNames = ["M. Williamson","Cornel West","Joe Biden","Chris Christie","Mike Pence","Ron Desantis","Donald Trump"];                            
 var sortedCanNames = [];
