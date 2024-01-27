@@ -209,24 +209,151 @@ var trace1 = {
 	mode: 'markers',
 	marker: {
 		size: 1,
+		color: 'rgba(0, 0, 0, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
 		opacity: 0.8},
-	type: 'scatter3d'
+	type: 'scatter3d',
+	name: "Sample"
 };
 trace2 = {x: [xCoord], y: [yCoord], z: [zCoord],
 mode: 'markers',
 	marker: {
 		size: 10,
+		color: 'rgba(0, 0, 0, 0.75)',
 		line: {
-		color: 'rgba(255, 0, 0, 0.14)',
+		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
 		opacity: 0.8},
-	type: 'scatter3d'
+	type: 'scatter3d',
+	name: "Your results"
+};
+trace3 = {x: ["4.9722"], y: ["-0.9852"], z: ["4.2185"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Constitutionalist Conservatism"
+};
+trace4 = {x: ["5.0232"], y: ["5.1720"], z: ["4.1200"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Neo-Conservatism"
+};
+trace5 = {x: ["8.4425"], y: ["-7.1100"], z: ["5.1765"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Hoppeanism"
+};
+trace6 = {x: ["-7.9698"], y: ["-2.6032"], z: ["-7.9887"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Left-Communism"
+};
+trace7 = {x: ["-8.8785"], y: ["4.8000"], z: ["-7.0100"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Marxism-Leninism"
+};
+trace8 = {x: ["-1.7154"], y: ["-7.7593"], z: ["-1.4286"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Anarcho-Individualism"
+};
+trace9 = {x: ["2.1302"], y: ["-2.1400"], z: ["-0.5017"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Moderate Liberalism"
+};
+trace10 = {x: ["5.4088"], y: ["-8.9353"], z: ["-5.0088"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Bleeding Heart Libertarianism"
+};
+trace11 = {x: ["-1.6285"], y: ["-2.0636"], z: ["-5.8564"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Social Democracy"
+};
+trace12 = {x: ["-2.5825"], y: ["6.9139"], z: ["7.3361"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Strasserism"
+};
+trace13 = {x: ["-8.1738"], y: ["-8.4243"], z: ["-8.4209"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		color: 'rgba(205, 250, 5, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Anarcho-Syndicalism"
 };
 
-var data = [trace1,trace2];
+
+var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,];
 var layout = {margin: {
 	l: 0,
 	r: 0,
