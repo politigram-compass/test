@@ -347,7 +347,7 @@ mode: 'markers',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
-		opacity: 0.5},
+		opacity: 0.14},
 	type: 'scatter3d',
 	name: "Anarcho-Syndicalism"
 };
