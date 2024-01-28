@@ -98,10 +98,10 @@ var canDistance;
 var maxCanDistance;
 var maxCanIndex;
 
-var idXCoords = [-4.0,-9.0,-4.0,-8.0,-3.0,-10.0,-8.0,-1.0,-10.0,-7.0,-2.0,-10.0,-8.0,-3.0,2.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
-var idYCoords = [9.0,5.0,7.0,2.0,1.0,0,-2.0,-2.0,-5.0,-6.0,-6.0,-10.0,-10.0,-10.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
-var idZCoords = [8.0,-5.0,8.0,-5.0,-3.0,-7.0,-6.0,-4.0,-7.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
-var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Libertarian Marxism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","tuckertarian","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism","Democratic Socialism"];                            
+var idXCoords = [-2.6,-8.9,-4.0,-8.0,-1.6,-10.0,-8.0,-1.0,-8.9,-7.0,-2.0,-9.0,-8.0,-2.6,1.0,2.0,9.0,3.0,4.0,5.0,1.0,8.0,5.0,1.0,2.0,6.0,8.0,4.0,10.0,-7.0];
+var idYCoords = [7.0,4.8,7.0,2.0,-2.0,0,-2.0,-2.0,-2.6,-6.0,-6.0,-9.0,-9.0,-9.0,10.0,7.0,8.0,4.0,6.0,3.0,1.0,0,-2.0,-7.0,-7.0,-7.0,-8.0,-10.0,-10.0,-1.0];
+var idZCoords = [7.3,-7.0,8.0,-5.0,-5.9,-7.0,-6.0,-4.0,-8.0,-8.0,0,-10.0,-9.0,-2.0,10.0,5.0,8.0,6.0,3.0,5.0,-5.0,-5.0,0,-7.0,0,0,0,0,0,-6.0];
+var idNames = ["Strasserism","Marxism-Leninism","Social Nationalism","Trotskyism","Social Democracy","Orthodox Marxism","Libertarian Marxism","Social Liberalism","Left-Communism","Libertarian Socialism","Libertarian Market Socialism","Anarcho-Communism","Anarcho-Collectivism","Mutualism","Fascism","State Capitalism","Neo-reactionism","Right-Wing Populism","Neoconservativism","Conservatism","Modern Liberalism","Conservatarianism","Constitutionalism","Bleeding Heart Libertarianism","Classical Liberalism","Right-Wing Libertarianism","Minarchism","Anarcho-Individualism","Anarcho-Capitalism","Democratic Socialism"];                            
 var sortedIdNames = [];
 var idDistances = [];
 var sortedIdDistances = [];
