@@ -354,12 +354,26 @@ mode: 'markers',
 
 
 var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,];
-var layout = {margin: {
-	l: 0,
-	r: 0,
-	b: 0,
-	t: 0
-  }};
+var layout = {scene:{
+	xaxis: {
+	 backgroundcolor: "rgb(255, 200, 200)",
+	 gridcolor: "rgb(255, 255, 255)",
+	 showbackground: true,
+	 zerolinecolor: "rgb(255, 255, 255)",
+    
+	}, 
+    yaxis: {
+     backgroundcolor: "rgb(200, 255,200)",
+     gridcolor: "rgb(255, 255, 255)",
+     showbackground: true,
+     zerolinecolor: "rgb(255, 255, 255)"
+    }, 
+    zaxis: {
+     backgroundcolor: "rgb(200, 200,255)",
+     gridcolor: "rgb(255, 255, 255)",
+     showbackground: true,
+     zerolinecolor: "rgb(255, 255, 255)"
+    }}};
 Plotly.newPlot('myDiv', data, layout);
 });
 
