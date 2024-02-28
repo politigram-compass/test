@@ -378,6 +378,20 @@ var layout = {margin: {
      gridcolor: "rgb(255, 255, 255)",
      showbackground: true,
      zerolinecolor: "rgb(255, 255, 255)"
+    },
+    camera: {
+      eye: {
+        x:0,
+        y:0,
+        z:1
+      },
+      up: {
+        x:0,
+        y:1,
+        z:0
+      },
+      projection: { type: "orthographic"}
+      
     }}};
 Plotly.newPlot('myDiv', data, layout);
 });
