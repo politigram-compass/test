@@ -361,21 +361,21 @@ var layout = {margin: {
 	t: 0
   },scene:{
 	xaxis: {
-	 backgroundcolor: "rgb(255, 200, 200)",
+	 backgroundcolor: "rgb(255, 240, 240)",
 	 gridcolor: "rgb(255, 255, 255)",
 	 showbackground: true,
 	 zerolinecolor: "rgb(255, 255, 255)",
     	 title: { text: "Economic Axis"}
 	}, 
     yaxis: {
-     backgroundcolor: "rgb(200, 255,200)",
+     backgroundcolor: "rgb(240, 255,240)",
      gridcolor: "rgb(255, 255, 255)",
      showbackground: true,
      zerolinecolor: "rgb(255, 255, 255)",
 	title: { text: "Social Axis"}
     }, 
     zaxis: {
-     backgroundcolor: "rgb(200, 200,255)",
+     backgroundcolor: "rgb(240, 240,255)",
      gridcolor: "rgb(255, 255, 255)",
      showbackground: true,
      zerolinecolor: "rgb(255, 255, 255)",
