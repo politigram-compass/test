@@ -220,7 +220,7 @@ var trace1 = {
 trace2 = {x: [xCoord], y: [yCoord], z: [zCoord],
 mode: 'markers',
 	marker: {
-		size: 10,
+		size: 5,
 		color: 'rgba(0, 0, 0, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
