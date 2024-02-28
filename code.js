@@ -365,19 +365,21 @@ var layout = {margin: {
 	 gridcolor: "rgb(255, 255, 255)",
 	 showbackground: true,
 	 zerolinecolor: "rgb(255, 255, 255)",
-    
+    	 title: { text: "Economic Axis"}
 	}, 
     yaxis: {
      backgroundcolor: "rgb(200, 255,200)",
      gridcolor: "rgb(255, 255, 255)",
      showbackground: true,
-     zerolinecolor: "rgb(255, 255, 255)"
+     zerolinecolor: "rgb(255, 255, 255)",
+	title: { text: "Social Axis"}
     }, 
     zaxis: {
      backgroundcolor: "rgb(200, 200,255)",
      gridcolor: "rgb(255, 255, 255)",
      showbackground: true,
-     zerolinecolor: "rgb(255, 255, 255)"
+     zerolinecolor: "rgb(255, 255, 255)",
+	title: { text: "Authority Axis"}
     },
     camera: {
       eye: {
