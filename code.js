@@ -354,7 +354,12 @@ mode: 'markers',
 
 
 var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,];
-var layout = {scene:{
+var layout = {margin: {
+	l: 0,
+	r: 0,
+	b: 0,
+	t: 0
+  },scene:{
 	xaxis: {
 	 backgroundcolor: "rgb(255, 200, 200)",
 	 gridcolor: "rgb(255, 255, 255)",
