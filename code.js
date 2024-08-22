@@ -351,7 +351,17 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Anarcho-Syndicalism"
 };
-
+var trace14 = {
+  x: ["10","0", "0","-10","0","0"],
+  y: ["0", "10", "0","0","-10","0"],
+    z:["0","0","10","0","0","-10"],
+  mode: 'text',
+  name: 'Labels',
+  text: ['More Right', 'More Authoritarian', 'More Conservative','More Left','More Libertarian','More Progressive'],
+  textposition: 'bottom',
+  type: 'scatter3d'
+textfont: { size: 8}
+};
 
 var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,];
 var layout = {margin: {
