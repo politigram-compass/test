@@ -326,7 +326,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Social Democracy"
+	name: "Social Democracy",
 };
 trace12 = {x: ["-2.5825"], y: ["6.9139"], z: ["7.3361"],
 mode: 'markers',
@@ -363,7 +363,7 @@ trace14 = {
 
 };
 
-
+/*
 var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8,trace9,trace10,trace11,trace12,trace13,trace14];
 var layout = {margin: {
 	l: 0,
@@ -407,6 +407,160 @@ var layout = {margin: {
       
     }}};
 Plotly.newPlot('myDiv', data, layout);
+*/
+var data = [];
+
+// Define vertices and faces for each quadrant cube
+var quadrants = [
+    {
+        name: "Quadrant 1", color: 'rgba(0, 255, 255, 0.5)',
+        x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
+        y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0],
+        z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
+    },
+    {
+        name: "Quadrant 2", color: 'rgba(255, 0, 0, 0.5)',
+        x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
+        y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
+        z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
+    },
+    {
+        name: "Quadrant 3", color: 'rgba(0, 255, 0, 0.5)',
+        x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
+        y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
+        z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
+    },
+    {
+        name: "Quadrant 4", color: 'rgba(255, 255, 0, 0.5)',
+        x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
+        y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
+        z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
+    },
+    {
+        name: "Quadrant 5", color: 'rgba(0, 255, 255, 0.5)',
+        x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
+        y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
+        z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
+    },
+    {
+        name: "Quadrant 6", color: 'rgba(255, 0, 0, 0.5)',
+        x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
+        y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
+        z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
+    },
+    {
+        name: "Quadrant 7", color: 'rgba(0, 255, 0, 0.5)',
+        x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
+        y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
+        z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
+    },
+    {
+        name: "Quadrant 8", color: 'rgba(255, 255, 0, 0.5)',
+        x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
+        y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
+        z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
+    }
+];
+
+// Add each quadrant as a mesh3d trace
+for (var i = 0; i < quadrants.length; i++) {
+    var quad = quadrants[i];
+    data.push({
+        type: 'mesh3d',
+        x: quad.x,
+        y: quad.y,
+        z: quad.z,
+        color: quad.color,
+        opacity: 0.1,
+        name: quad.name,
+        i: [7, 0, 0, 0, 4, 4, 6, 6, 4, 0, 3, 2],
+        j: [3, 4, 1, 2, 5, 6, 5, 2, 0, 1, 6, 3],
+        k: [0, 7, 2, 3, 6, 7, 1, 1, 5, 5, 7, 6]
+        //flatshading: True
+
+
+    });
+}
+// Define the traces array
+var traces = [
+    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13
+];
+
+// Function to calculate Euclidean distance
+function calculateDistance(x1, y1, z1, x2, y2, z2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2));
+}
+
+// Variables to track the closest trace
+var minDistance = Infinity;
+var closestTraceIndex = -1;
+
+// Loop through the traces to find the closest one
+for (var i = 0; i < traces.length; i++) {
+    var trace = traces[i];
+    var traceX = parseFloat(trace.x[0]);
+    var traceY = parseFloat(trace.y[0]);
+    var traceZ = parseFloat(trace.z[0]);
+
+    // Calculate the distance from the trace to the reference point
+    var distance = calculateDistance(xCoord, yCoord, zCoord, traceX, traceY, traceZ);
+
+    // Check if this trace is the closest so far
+    if (distance < minDistance) {
+        minDistance = distance;
+        closestTraceIndex = i;
+    }
+}
+
+// Update the visibility of each trace
+for (var i = 0; i < traces.length; i++) {
+    if (i === closestTraceIndex) {
+        traces[i].visible = true;  // Ensure the closest trace is visible
+    } else {
+        traces[i].visible = 'legendonly';  // Set other traces to legend only
+    }
+}
+// Existing traces for points
+data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14);
+
+var layout = {
+    margin: {
+        l: 0,
+        r: 0,
+        b: 0,
+        t: 0
+    },
+    dragmode: "turntable",
+    scene: {
+        xaxis: {
+            title: { text: "Economic Axis" }
+        },
+        yaxis: {
+            title: { text: "Social Axis" }
+        },
+        zaxis: {
+            title: { text: "Authority Axis" }
+        },
+        camera: {
+            eye: {
+                x: 0,
+                y: 0,
+                z: 0.5
+            },
+            up: {
+                x: 1,
+                y: 0,
+                z: 0
+            },
+            projection: { type: "orthographic" }
+            
+        }
+        
+    }
+};
+
+Plotly.newPlot('myDiv', data, layout);
+
 });
 
   plotResults();
