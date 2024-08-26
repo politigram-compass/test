@@ -533,19 +533,22 @@ var layout = {
     dragmode: "turntable",
     scene: {
         xaxis: {
-            title: { text: "Economic Axis" }
+            showticklabels: false,
+            title: { text: "Economic Axis" },
             tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
     tick0: 0,
     dtick: 1
         },
         yaxis: {
-            title: { text: "Social Axis" }
+            showticklabels: false,
+            title: { text: "Social Axis" },
             tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
     tick0: 0,
     dtick: 1
         },
         zaxis: {
-            title: { text: "Authority Axis" }
+            showticklabels: false,
+            title: { text: "Authority Axis" },
             tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
     tick0: 0,
     dtick: 1
