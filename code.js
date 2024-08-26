@@ -534,12 +534,21 @@ var layout = {
     scene: {
         xaxis: {
             title: { text: "Economic Axis" }
+            tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
+    tick0: 0,
+    dtick: 1
         },
         yaxis: {
             title: { text: "Social Axis" }
+            tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
+    tick0: 0,
+    dtick: 1
         },
         zaxis: {
             title: { text: "Authority Axis" }
+            tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
+    tick0: 0,
+    dtick: 1
         },
         camera: {
             eye: {
