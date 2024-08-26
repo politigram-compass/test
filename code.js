@@ -306,7 +306,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Third Way Liberalism"
 };
-trace10 = {x: ["5.4088"], y: ["-8.9353"], z: ["-5.0088"],
+trace10 = {x: ["5.4088"], y: ["-6.9353"], z: ["-5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -351,7 +351,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Anarcho-Syndicalism"
 };
-trace15 = {x: ["5.4088"], y: ["-8.9353"], z: ["5.0088"],
+trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -380,7 +380,8 @@ trace14 = {
     z:["0","0","10","0","0","-10"],
   mode: 'text',
   name: 'Labels',
-  text: ['More Right', 'More Authoritarian', 'More Conservative','More Left','More Libertarian','More Progressive'],
+  text: ['+', '+', '+','-','-','-'],
+  showlegend: false,
   textposition: 'bottom',
   type: 'scatter3d'
 
