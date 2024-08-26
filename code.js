@@ -295,7 +295,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Anarcho-Individualism"
 };
-trace9 = {x: ["2.1302"], y: ["-2.1400"], z: ["-0.5017"],
+trace9 = {x: ["2.1302"], y: ["0"], z: ["-0.5017"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -304,7 +304,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Moderate Liberalism"
+	name: "Third Way Liberalism"
 };
 trace10 = {x: ["5.4088"], y: ["-8.9353"], z: ["-5.0088"],
 mode: 'markers',
@@ -350,6 +350,29 @@ mode: 'markers',
 		opacity: 0.14},
 	type: 'scatter3d',
 	name: "Anarcho-Syndicalism"
+};
+trace15 = {x: ["5.4088"], y: ["-8.9353"], z: ["5.0088"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		color: 'rgba(205, 250, 5, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.14},
+	type: 'scatter3d',
+	name: "Paleolibertarianism"
+};
+trace16 = {x: ["2.5825"], y: ["6.9139"], z: ["7.3361"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Fascism"
 };
 trace14 = {
   x: ["10","0", "0","-10","0","0"],
@@ -483,7 +506,7 @@ for (var i = 0; i < quadrants.length; i++) {
 }
 // Define the traces array
 var traces = [
-    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13
+    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace15, trace16
 ];
 
 // Function to calculate Euclidean distance
@@ -521,7 +544,7 @@ for (var i = 0; i < traces.length; i++) {
     }
 }
 // Existing traces for points
-data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14);
+data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16);
 
 var layout = {
     margin: {
