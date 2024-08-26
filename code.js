@@ -343,7 +343,7 @@ trace13 = {x: ["-8.1738"], y: ["-8.4243"], z: ["-8.4209"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(205, 250, 5, 0.75)',
+		color: 'rgba(255, 80, 5, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
@@ -355,7 +355,7 @@ trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(205, 250, 5, 0.75)',
+		color: 'rgba(45, 0, 100, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
@@ -367,6 +367,7 @@ trace16 = {x: ["2.5825"], y: ["6.9139"], z: ["7.3361"],
 mode: 'markers',
 	marker: {
 		size: 20,
+		color: 'rgba(200, 245, 200, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
@@ -378,6 +379,7 @@ trace17 = {x: ["2.5825"], y: ["4.0"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
+		color: 'rgba(0, 0, 0, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
