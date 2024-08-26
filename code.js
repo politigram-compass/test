@@ -328,7 +328,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Social Democracy",
 };
-trace12 = {x: ["-2.5825"], y: ["6.9139"], z: ["7.3361"],
+trace12 = {x: ["-2.5825"], y: ["7.9139"], z: ["7.3361"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -347,7 +347,7 @@ mode: 'markers',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
-		opacity: 0.14},
+		opacity: 0.5},
 	type: 'scatter3d',
 	name: "Anarcho-Syndicalism"
 };
@@ -355,19 +355,19 @@ trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(45, 0, 100, 0.75)',
+		color: 'rgba(31, 1, 66, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
-		opacity: 0.14},
+		opacity: 0.5},
 	type: 'scatter3d',
 	name: "Paleolibertarianism"
 };
-trace16 = {x: ["2.5825"], y: ["6.9139"], z: ["7.3361"],
+trace16 = {x: ["2.5825"], y: ["7.9139"], z: ["7.3361"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(200, 245, 200, 0.75)',
+		color: 'rgba(110, 255, 110, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
@@ -379,7 +379,7 @@ trace17 = {x: ["2.5825"], y: ["4.0"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(0, 0, 0, 0.75)',
+		color: 'rgba(255, 255, 255, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
