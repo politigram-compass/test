@@ -251,7 +251,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Neo-Conservatism"
 };
-trace5 = {x: ["8.4425"], y: ["-7.1100"], z: ["5.1765"],
+trace5 = {x: ["8.4425"], y: ["-8.1100"], z: ["5.1765"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -450,49 +450,49 @@ var data = [];
 // Define vertices and faces for each quadrant cube
 var quadrants = [
     {
-        name: "Quadrant 1", color: 'rgba(0, 255, 255, 0.5)',
+        name: "Conservative Authoritarian Right", color: 'rgba(0, 255, 255, 0.5)',
         x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
         y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0],
         z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
     },
     {
-        name: "Quadrant 2", color: 'rgba(255, 0, 0, 0.5)',
+        name: "Conservative Authoritarian Left", color: 'rgba(255, 0, 0, 0.5)',
         x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
         y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
         z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
     },
     {
-        name: "Quadrant 3", color: 'rgba(0, 255, 0, 0.5)',
+        name: "Conservative Libertarian Left", color: 'rgba(0, 255, 0, 0.5)',
         x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
         y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
         z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
     },
     {
-        name: "Quadrant 4", color: 'rgba(255, 255, 0, 0.5)',
+        name: "Conservative Libertarian Right", color: 'rgba(255, 255, 0, 0.5)',
         x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
         y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
         z: [0, 0, 0, 0, 10, 10, 10, 10, 0, 10, 0, 10, 0, 10, 0, 10, 10, 10, 0, 10]
     },
     {
-        name: "Quadrant 5", color: 'rgba(0, 255, 255, 0.5)',
+        name: "Progressive Authoritarian Right", color: 'rgba(0, 255, 255, 0.5)',
         x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
         y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
         z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
     },
     {
-        name: "Quadrant 6", color: 'rgba(255, 0, 0, 0.5)',
+        name: "Progressive Authoritarian Left", color: 'rgba(255, 0, 0, 0.5)',
         x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
         y: [0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 0, 10, 10, 10, 10, 10, 0, 10, 0], 
         z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
     },
     {
-        name: "Quadrant 7", color: 'rgba(0, 255, 0, 0.5)',
+        name: "Progressive Libertarian Left", color: 'rgba(0, 255, 0, 0.5)',
         x: [-10, 0, 0, -10, -10, 0, 0, -10, -10, -10, 0, 0, -10, -10, 0, 0, -10, -10, 0, 0], 
         y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
         z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
     },
     {
-        name: "Quadrant 8", color: 'rgba(255, 255, 0, 0.5)',
+        name: "Progressive Libertarian Right", color: 'rgba(255, 255, 0, 0.5)',
         x: [0, 10, 10, 0, 0, 10, 10, 0, 0, 0, 10, 10, 0, 0, 10, 10, 0, 0, 10, 10], 
         y: [-10, -10, 0, 0, -10, -10, 0, 0, -10, -10, -10, -10, 0, 0, 0, 0, 0, -10, 0, -10], 
         z: [-10, -10, -10, -10, 0, 0, 0, 0, -10, 0, -10, 0, -10, 0, -10, 0, 0, 0, -10, 0]
@@ -504,6 +504,8 @@ for (var i = 0; i < quadrants.length; i++) {
     var quad = quadrants[i];
     data.push({
         type: 'mesh3d',
+        textposition: 'outside',
+        hovertemplate:" ",
         x: quad.x,
         y: quad.y,
         z: quad.z,
@@ -561,6 +563,7 @@ for (var i = 0; i < traces.length; i++) {
 data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17);
 
 var layout = {
+    hoverlabel: { bgcolor: "#000" },
     margin: {
         l: 0,
         r: 0,
