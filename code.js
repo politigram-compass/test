@@ -317,7 +317,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Bleeding Heart Libertarianism"
 };
-trace11 = {x: ["-1.6285"], y: ["-2.0636"], z: ["-5.8564"],
+trace11 = {x: ["-1.6285"], y: ["-2.0636"], z: ["-5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
