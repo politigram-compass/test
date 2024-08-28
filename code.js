@@ -240,7 +240,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Constitutionalist Conservatism"
 };
-trace4 = {x: ["5.0232"], y: ["5.1720"], z: ["4.1200"],
+trace4 = {x: ["5.4088"], y: ["0.9852"], z: ["7.3361"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -249,7 +249,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Neo-Conservatism"
+	name: "Paleoconservatism"
 };
 trace5 = {x: ["8.4425"], y: ["-8.1100"], z: ["5.1765"],
 mode: 'markers',
@@ -339,7 +339,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Strasserism"
 };
-trace13 = {x: ["-8.1738"], y: ["-8.4243"], z: ["-8.4209"],
+trace13 = {x: ["-8.1738"], y: ["-7.4243"], z: ["-8.4209"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -349,7 +349,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Anarcho-Syndicalism"
+	name: "Libertarian Socialism"
 };
 trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["5.0088"],
 mode: 'markers',
