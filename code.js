@@ -240,7 +240,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Constitutionalist Conservatism"
 };
-trace4 = {x: ["5.4088"], y: ["0.9852"], z: ["7.3361"],
+trace4 = {x: ["-1.6285"], y: ["4.0"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -249,7 +249,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Paleoconservatism"
+	name: "Christian Democracy/Distributism"
 };
 trace5 = {x: ["8.4425"], y: ["-8.1100"], z: ["5.1765"],
 mode: 'markers',
@@ -343,7 +343,7 @@ trace13 = {x: ["-8.1738"], y: ["-7.4243"], z: ["-8.4209"],
 mode: 'markers',
 	marker: {
 		size: 20,
-		color: 'rgba(255, 80, 5, 0.75)',
+		color: 'rgba(247, 209, 104, 0.75)',
 		line: {
 		color: 'rgba(0, 0, 0, 0.14)',
 		width: 0.5},
@@ -351,7 +351,7 @@ mode: 'markers',
 	type: 'scatter3d',
 	name: "Libertarian Socialism"
 };
-trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["5.0088"],
+trace15 = {x: ["5.4088"], y: ["-6.9353"], z: ["4.2185"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -581,14 +581,14 @@ var layout = {
         },
         yaxis: {
             showticklabels: false,
-            title: { text: "Social Axis" },
+            title: { text: "Authority Axis" },
             tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
     tick0: 0,
     dtick: 1
         },
         zaxis: {
             showticklabels: false,
-            title: { text: "Authority Axis" },
+            title: { text: "Social Axis" },
             tickmode: "linear", //  If "linear", the placement of the ticks is determined by a starting position `tick0` and a tick step `dtick`
     tick0: 0,
     dtick: 1
