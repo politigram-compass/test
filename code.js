@@ -1388,8 +1388,8 @@ onEvent("button2","click",function(){
   setStyle("dot", "z-index: 10");
   hide();
   endTest();
-  //var div = document.getElementById('divApplab');
-  //div.remove();
+  var div = document.getElementById('divApplab');
+  div.remove();
 });
 onEvent("button4", "click", function(){
   showElement("percent7");
