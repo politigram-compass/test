@@ -245,7 +245,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace4 = {x: ["-1.6285"], y: ["4.0"], z: ["5.0088"],
+trace4 = {x: ["-1.6285"], y: ["5.0"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -380,7 +380,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace13 = {x: ["-8.1738"], y: ["-7.4243"], z: ["-8.4209"],
+trace13 = {x: ["-8.1738"], y: ["-8.4243"], z: ["-8.4209"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -390,7 +390,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Libertarian Socialism",
+	name: "Anarcho-Syndicalism",
 	legendgroup: "Ideologies",
 	legendgrouptitle: {
 	  text: "Ideologies"
@@ -412,7 +412,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace16 = {x: ["2.5825"], y: ["7.9139"], z: ["7.3361"],
+trace16 = {x: ["2.5825"], y: ["8.4243"], z: ["7.75"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -428,7 +428,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace17 = {x: ["2.5825"], y: ["4.0"], z: ["5.0088"],
+trace17 = {x: ["2.5825"], y: ["5.0"], z: ["5.0088"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -442,6 +442,254 @@ mode: 'markers',
 	legendgroup: "Ideologies",
 	legendgrouptitle: {
 	  text: "Ideologies"
+	}
+};
+/*
+trace18 = {x: ["-9"], y: ["9"], z: ["4"],
+mode: 'markers',
+	marker: {
+		size: 20,
+		color: 'rgba(255, 255, 255, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 0.14)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Joseph Stalin",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+*/
+trace19 = {x: ["-9"], y: ["5"], z: ["-7.5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Fred Hampton",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace20 = {x: ["-10"], y: ["0"], z: ["-1"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Karl Marx",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace21 = {x: ["-7.5"], y: ["0"], z: ["-6.5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Rosa Luxemburg",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace22 = {x: ["-9.5"], y: ["-10"], z: ["-9"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Emma Goldman",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace23 = {x: ["-6"], y: ["8"], z: ["8"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Robert Mugabe",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace25 = {x: ["-2.5"], y: ["-10"], z: ["-4.5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Pierre Joseph Proudhon",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace18 = {x: ["-3"], y: ["5"], z: ["5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Pope Benedict XVI",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace26 = {x: ["-3"], y: ["0"], z: ["-5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Bernie Sanders",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace27 = {x: ["0"], y: ["5"], z: ["7"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Richard Nixon",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace28 = {x: ["2"], y: ["10"], z: ["10"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Adolf Hitler",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace30 = {x: ["2"], y: ["2"], z: ["-2"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		color: 'rgba(247, 209, 104, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Angela Merkel",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace31 = {x: ["4"], y: ["6.5"], z: ["6.5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		color: 'rgba(110, 255, 110, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Donald Trump",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace32 = {x: ["6"], y: ["4.5"], z: ["5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		color: 'rgba(255, 255, 255, 0.75)',
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Ronald Reagan",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace33 = {x: ["8"], y: ["-8"], z: ["5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(247, 134, 134, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Javier Milei",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
+	}
+};
+trace34 = {x: ["5"], y: ["-6"], z: ["-5"],
+mode: 'markers',
+	marker: {
+		size: 5,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "Gary Johnson",
+	legendgroup: "Figures",
+	legendgrouptitle: {
+	  text: "Figures"
 	}
 };
 trace14 = {
@@ -616,14 +864,29 @@ for (var i = 0; i < traces.length; i++) {
         traces[i].visible = 'legendonly';  // Set other traces to legend only
     }
 }
+
+traces = [
+    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34
+];
+// Update the visibility of each trace
+for (var i = 0; i < traces.length; i++) {
+    if (traces[i].legendgroup === "Figures") {
+      traces[i].visible = 'legendonly';  // Set other traces to legend only
+    }
+}
 // Existing traces for points
-data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17);
+data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34);
 
 var layout = {
     legend: {
-      groupclick: "togglegroup"
+        groupclick: "toggleitem",
+        x: 0,
+        y: -5
     },
     hoverlabel: { bgcolor: "#000" },
+    autosize: false,
+    width: 360,
+    height: 640,
     margin: {
         l: 0,
         r: 0,
