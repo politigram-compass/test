@@ -228,7 +228,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.8},
 	type: 'scatter3d',
-	name: "Your results"
+	name: "Your results (" + xCoord + ", " + yCoord + ", " + zCoord + ")"
 };
 trace3 = {x: ["4.9722"], y: ["-0.9852"], z: ["4.2185"],
 mode: 'markers',
