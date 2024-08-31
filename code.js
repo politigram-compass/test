@@ -17,6 +17,7 @@ var distances = [];
 var maxDistance;
 var maxIndex;
 var sortedDistances = [];
+// seize_the_memes, the_southern_leftist, angry.americans, anpacball, lippie4solidarity, proudly.we.hail, ancap_society__, the.eco.socialist, majortomrade, tuckertarian, shoe0nhead, leftistperspective, bahamasball, possumtwostillpossumin, thelaurenchen, puppers.against.capitalism, anarcho_bidenism_action, the.decadent.socialist2 
 var usernames = ["teen.politics.official","charlemagnes_corner","seize_the_memes","batkoschizo","progressive.politico","feldsteinphilosophy","the_southern_leftist","liberty_son_76","teen.politics.official","social_liberals","max_stirner_fanpage_v2","old.right","deafpatriot","angry.americans","libertylover2","refoundingfather","anarchist.punk","broken.bones.and.civilizations","kiwimutualist","anpacball","individualist.libertarian","reactionary.movement.v5","right_wing_imperial","anarchistunity","socialista.tejana","liberallibertarian","visionary.arabia","social.dem.official","palmetto_state_bluedog","pizza.minuteman","lippie4solidarity","massachusite","lib_confederalism","soc.leftist","2038_movement","american.edgelord.v2","union.inter","proudly.we.hail","anarcho.garfieldism","anarchy.is.liberty","ancap_or_death","ancap_society","the.eco.socialist","biblicalamericanpolitics","campus_conservative_","cristero.mexico","cuban.progressive","demsocialistcolony","identityeurope","tiitoist","libertiansocialist.sf","majortomrade","marxist_luxemburgist","mexicanlibertarian","mister.american","tuckertarian","not_a_domestic_terrorist","refoundingfather","shoe0nhead","the.geopolitical.forecaster","anarquistamexicano","toronto_socialist","trotskium","wokerevolution","realisticleftist","leftistcommentary","mass_liberty","nationalist__party","new.libertarianism","missourian_ancaps","art.n.politics.v3","unorthodox.anarchist","soviet.chronicles_.v15","politicrab","leftistperspective","cyberjeetism","therightstats","immortal_leninism","american_coalition_v2","im_literally_melody","deep.fried.tyrannicide","genz.politics","kashmarxi","let_me_barter_btch","libertarian_atheist_","marxist_horizons","pennsylvania_progressive","bahamasball","unionizethehomeless","independent.american","comrade_sacha","possumtwostillpossumin","american.marxist","proletarian.flame","redneck.anarchist","thelaurenchen","puppers.against.capitalism","anarcho_bidenism_action","the.decadent.socialist2","sees.the.memes"];
 /*
 setImageURL("pfp0","https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/67764982_1550989088385934_3968337532810166272_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=110&_nc_ohc=No8H0lGy0TQAX_Ug1qp&edm=AId3EpQBAAAA&ccb=7-5&oh=00_AfBYmN6bqRRAIfPz2znGT_b5cgfaKmbea7mGC9w_czsjqw&oe=64A7678E&_nc_sid=f5838a");
@@ -239,7 +240,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Constitutionalist Conservatism",
+	name: "Conservatarianism",
 	legendgroup: "Ideologies",
 	legendgrouptitle: {
 	  text: "Ideologies"
@@ -492,7 +493,7 @@ mode: 'markers',
 	  text: "Figures"
 	}
 };
-trace21 = {x: ["-7.5"], y: ["0"], z: ["-6.5"],
+trace21 = {x: ["7"], y: ["-6"], z: ["2"],
 mode: 'markers',
 	marker: {
 		size: 5,
@@ -501,7 +502,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Rosa Luxemburg",
+	name: "Ron Paul",
 	legendgroup: "Figures",
 	legendgrouptitle: {
 	  text: "Figures"
@@ -567,7 +568,7 @@ mode: 'markers',
 	  text: "Figures"
 	}
 };
-trace26 = {x: ["-3"], y: ["0"], z: ["-5"],
+trace26 = {x: ["-3"], y: ["-0.5"], z: ["-5"],
 mode: 'markers',
 	marker: {
 		size: 5,
@@ -810,11 +811,12 @@ for (var i = 0; i < quadrants.length; i++) {
     data.push({
         type: 'mesh3d',
         textposition: 'outside',
-        hovertemplate:" ",
+        //hovertemplate:" ",
         x: quad.x,
         y: quad.y,
         z: quad.z,
         color: quad.color,
+        hoverinfo: "skip",
         opacity: 0.1,
         name: quad.name,
         i: [7, 0, 0, 0, 4, 4, 6, 6, 4, 0, 3, 2],
