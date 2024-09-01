@@ -1147,7 +1147,7 @@ var layout = {
     hoverlabel: { bgcolor: "#000" },
     autosize: false,
     width: 320,
-    height: 780,
+    height: 640,
     margin: {
         l: 0,
         r: 0,
