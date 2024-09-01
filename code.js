@@ -693,6 +693,262 @@ mode: 'markers',
 	  text: "Figures"
 	}
 };
+trace35 = {x: ["-7.83"], y: ["-3.2"], z: ["-8.4"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@seize_the_memes",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace36 = {x: ["-3.88"], y: ["-1.38"], z: ["-3.63"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@the_southern_leftist",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace37 = {x: ["7.5"], y: ["-8.13"], z: ["-6"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@angry.americans",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace38 = {x: ["-8"], y: ["-8.9"], z: ["-6.7"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@anpacball",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace39 = {x: ["-8.25"], y: ["-7.5"], z: ["-9"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@lippie4solidarity",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace40 = {x: ["2.5"], y: ["2.8"], z: ["4"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@proudly.we.hail",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace41 = {x: ["5.17"], y: ["-7.7"], z: ["-1.9"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@ancap_society",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace42 = {x: ["-9.67"], y: ["-7.9"], z: ["-9.3"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@the.eco.socialist",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace43 = {x: ["-9.75"], y: ["-4.7"], z: ["-10"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@majortomrade",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace44 = {x: ["1.17"], y: ["2.4"], z: ["6.2"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@tuckertarian",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace45 = {x: ["-3.5"], y: ["-2.5"], z: ["-4.4"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@shoe0nhead",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace46 = {x: ["-8.75"], y: ["-6.25"], z: ["-9"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@leftistperspective",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace47 = {x: ["-9.75"], y: ["-9"], z: ["-8.6"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@possumtwostillpossumin",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace48 = {x: ["6.58"], y: ["1.1"], z: ["5.5"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@thelaurenchen",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace49 = {x: ["-7.83"], y: ["-6.2"], z: ["-9"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@puppers.against.capitalism",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
+trace50 = {x: ["-8.17"], y: ["-3"], z: ["-7.1"],
+mode: 'markers',
+	marker: {
+		size: 3,
+		color: 'rgba(31, 1, 66, 0.75)', 
+		line: {
+		color: 'rgba(0, 0, 0, 1)',
+		width: 0.5},
+		opacity: 0.5},
+	type: 'scatter3d',
+	name: "@anarcho_bidenism_action",
+	legendgroup: "IG Accounts",
+	legendgrouptitle: {
+	  text: "IG Accounts"
+	}
+};
 trace14 = {
   x: ["10","0", "0","-10","0","0"],
   y: ["0", "10", "0","0","-10","0"],
@@ -868,16 +1124,19 @@ for (var i = 0; i < traces.length; i++) {
 }
 
 traces = [
-    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34
+    trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34, trace35, trace36, trace37, trace38, trace39, trace40, trace41, trace42, trace43, trace44, trace45, trace46, trace47, trace48, trace49, trace50
 ];
 // Update the visibility of each trace
 for (var i = 0; i < traces.length; i++) {
     if (traces[i].legendgroup === "Figures") {
       traces[i].visible = 'legendonly';  // Set other traces to legend only
     }
+    if (traces[i].legendgroup === "IG Accounts") {
+      traces[i].visible = 'legendonly';  // Set other traces to legend only
+    }
 }
 // Existing traces for points
-data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34);
+data.push(trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17, trace18, trace19, trace20, trace21, trace22, trace23, trace25, trace26, trace27, trace28, trace30, trace31, trace32, trace33, trace34, trace35, trace36, trace37, trace38, trace39, trace40, trace41, trace42, trace43, trace44, trace45, trace46, trace47, trace48, trace49, trace50);
 
 var layout = {
     legend: {
