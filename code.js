@@ -261,7 +261,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace5 = {x: ["8.4425"], y: ["-8.1100"], z: ["5.6765"],
+trace5 = {x: ["8.4425"], y: ["-8.6100"], z: ["6.6765"],
 mode: 'markers',
 	marker: {
 		size: 20,
