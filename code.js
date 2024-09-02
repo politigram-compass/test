@@ -709,7 +709,7 @@ mode: 'markers',
 	  text: "IG Accounts"
 	}
 };
-trace36 = {x: ["-3.88"], y: ["-1.38"], z: ["-3.63"],
+trace36 = {x: ["-8.08"], y: ["-6.60"], z: ["-5.10"],
 mode: 'markers',
 	marker: {
 		size: 3,
