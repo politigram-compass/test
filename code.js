@@ -381,7 +381,7 @@ mode: 'markers',
 	  text: "Ideologies"
 	}
 };
-trace13 = {x: ["-8.1738"], y: ["-8.4243"], z: ["-8.4209"],
+trace13 = {x: ["-7.1738"], y: ["-7.4243"], z: ["-7.4209"],
 mode: 'markers',
 	marker: {
 		size: 20,
@@ -391,7 +391,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Anarcho-Syndicalism",
+	name: "Libertarian Socialism",
 	legendgroup: "Ideologies",
 	legendgrouptitle: {
 	  text: "Ideologies"
