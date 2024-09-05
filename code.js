@@ -463,7 +463,7 @@ mode: 'markers',
 	}
 };
 */
-trace19 = {x: ["-9"], y: ["5"], z: ["-7.5"],
+trace19 = {x: ["-9"], y: ["4.5"], z: ["-7.5"],
 mode: 'markers',
 	marker: {
 		size: 5,
@@ -741,7 +741,7 @@ mode: 'markers',
 	  text: "IG Accounts"
 	}
 };
-trace38 = {x: ["-8"], y: ["-8.9"], z: ["-6.7"],
+trace38 = {x: ["-7.25"], y: ["-0.1"], z: ["-3.2"],
 mode: 'markers',
 	marker: {
 		size: 3,
