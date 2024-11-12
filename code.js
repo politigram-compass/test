@@ -360,7 +360,7 @@ mode: 'markers',
 		width: 0.5},
 		opacity: 0.5},
 	type: 'scatter3d',
-	name: "Social Democracy",
+	name: "Progressive Social Democracy",
 	legendgroup: "Ideologies",
 	legendgrouptitle: {
 	  text: "Ideologies"
