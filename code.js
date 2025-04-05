@@ -1912,8 +1912,14 @@ onEvent("button2","click",function(){
   setStyle("dot", "z-index: 10");
   hide();
   endTest();
-  var div = document.getElementById('divApplab');
-  div.remove();
+  var plotlyDiv = document.getElementById('myDiv');
+  plotlyDiv.style.display = "none";
+});
+onEvent("label6","click",function(){
+  var plotlyDiv = document.getElementById('myDiv');
+  var applabDiv = document.getElementById('divApplab');
+  applabDiv.style.display = "none";
+  plotlyDiv.style.display = "block";
 });
 onEvent("button4", "click", function(){
   showElement("percent7");
