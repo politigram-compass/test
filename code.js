@@ -1915,7 +1915,7 @@ onEvent("button2","click",function(){
   var plotlyDiv = document.getElementById('myDiv');
   plotlyDiv.style.display = "none";
 });
-onEvent("label6","click",function(){
+onEvent("button60","click",function(){
   var plotlyDiv = document.getElementById('myDiv');
   var applabDiv = document.getElementById('divApplab');
   applabDiv.style.display = "none";
