@@ -1203,17 +1203,17 @@ Plotly.newPlot('myDiv', data, layout);
 }
 function calculatePlacement(variable){
   if (variable === "x"){
-  xValue = (ans[0] + ans[1] + ans[2]+ ans[3]+ ans[4]+ ans[5]+ ans[6]+ ans[7]+ ans[8]+ ans[9]+ ans[10] + ans[11] - ans[12] - ans[13] - ans[14] - ans[15] - ans[16] - ans[17] - ans[18] - ans[19] - ans[20] - ans[21] - ans[22] - ans[23])/12;
+  xValue = (ans[0] + ans[1] + ans[2]+ ans[3]+ ans[4]+ ans[5]+ ans[6]+ ans[7]+ ans[8]+ ans[9]+ ans[10] - ans[11] - ans[12] - ans[13] - ans[14] - ans[15] - ans[16] - ans[17] - ans[18] - ans[19] - ans[20] - ans[21])/11;
   xPosition = xValue*16+155;
   xCoord = (xValue).toFixed(2);
   }
   if (variable === "y"){
-  yValue = (ans[24] + ans[25] + ans[26] + ans[27] + ans[28] + ans[29] + ans[30] + ans[31] + ans[32] + ans[33] - ans[34] - ans[35] - ans[36] - ans[37] - ans[38] - ans[39] - ans[40] - ans[41] - ans[42] - ans[43])/10;
+  yValue = (ans[22] + ans[23] + ans[24] + ans[25] + ans[26] + ans[27] + ans[28] + ans[29] + ans[30] - ans[31] - ans[32] - ans[33] - ans[34] - ans[35] - ans[36] - ans[37] - ans[38] - ans[39])/9;
   yPosition = yValue*16+195;
   yCoord = (-(yValue)).toFixed(2);
   }
   if (variable === "z"){
-  zValue = (ans[44] + ans[45] + ans[46] + ans[47] + ans[48] + ans[49] + ans[50] + ans[51] + ans[52] + ans[53] - ans[54] - ans[55] - ans[56] - ans[57] - ans[58] - ans[59] - ans[60] - ans[61] - ans[62] - ans[63])/10;
+  zValue = (ans[40] + ans[41] + ans[42] + ans[43] + ans[44] + ans[45] + ans[46] + ans[47] + ans[48] - ans[49] - ans[50] - ans[51] - ans[52] - ans[53] - ans[54] - ans[55] - ans[56] - ans[57])/9;
   zPosition = zValue*16+160;
   zCoord = (zValue).toFixed(2); 
   }
@@ -1525,381 +1525,375 @@ onEvent("button1","click",function(){
 
 });
 onEvent("slider1","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,0,getNumber("slider1"));
   nextQuestion();
 
   
 });
 onEvent("slider2","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,1,getNumber("slider2"));
   nextQuestion();
   
 });
 onEvent("slider3","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,2,getNumber("slider3"));
   nextQuestion();
   
 });
 onEvent("slider4","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,3,getNumber("slider4"));
   nextQuestion();
   });
 onEvent("slider5","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,4,getNumber("slider5"));
   nextQuestion();
   });
 onEvent("slider6","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,5,getNumber("slider6"));
   nextQuestion();
   });
 onEvent("slider7","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,6,getNumber("slider7"));
   nextQuestion();
   });
 onEvent("slider8","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,7,getNumber("slider8"));
   nextQuestion();
   });
 onEvent("slider9","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,8,getNumber("slider9"));
   nextQuestion();
   
 });
 onEvent("slider10","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,9,getNumber("slider10"));
   nextQuestion();
   
 });
 onEvent("slider11","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,10,getNumber("slider11"));
   nextQuestion();
   
 });
 onEvent("slider12","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,11,getNumber("slider12"));
   nextQuestion();
   
 });
 onEvent("slider13","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,12,getNumber("slider13"));
   nextQuestion();
   
 });
 onEvent("slider14","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,13,getNumber("slider14"));
   nextQuestion();
   
 });
 onEvent("slider15","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,14,getNumber("slider15"));
   nextQuestion();
   });
 onEvent("slider16","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,15,getNumber("slider16"));
   nextQuestion();
   
 });
 onEvent("slider17","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,16,getNumber("slider17"));
   nextQuestion();
   
 });
 onEvent("slider18","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,17,getNumber("slider18"));
   nextQuestion();
   
 });
 onEvent("slider19","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,18,getNumber("slider19"));
   nextQuestion();
   
 });
 onEvent("slider20","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,19,getNumber("slider20"));
   nextQuestion();
   
 });
 onEvent("slider21","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,20,getNumber("slider21"));
   nextQuestion();
   
 });
 onEvent("slider22","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,21,getNumber("slider22"));
   nextQuestion();
   
 });
 onEvent("slider23","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,22,getNumber("slider23"));
   nextQuestion();
   
 });
 onEvent("slider24","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,23,getNumber("slider24"));
   nextQuestion();
   
 });
 onEvent("slider25","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,24,getNumber("slider25"));
   nextQuestion();
   
 });
 onEvent("slider26","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,25,getNumber("slider26"));
   nextQuestion();
   
 });
 onEvent("slider27","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,26,getNumber("slider27"));
   nextQuestion();
   
 });
 onEvent("slider28","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,27,getNumber("slider28"));
   nextQuestion();
   
 });
 onEvent("slider29","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,28,getNumber("slider29"));
   nextQuestion();
   
 });
 onEvent("slider30","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,29,getNumber("slider30"));
   nextQuestion();
   
 });
 onEvent("slider31","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,30,getNumber("slider31"));
   nextQuestion();
   
 });
 onEvent("slider32","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,31,getNumber("slider32"));
   nextQuestion();
   
 });
 onEvent("slider33","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,32,getNumber("slider33"));
   nextQuestion();
   
 });
 onEvent("slider34","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,33,getNumber("slider34"));
   nextQuestion();
   
 });
 onEvent("slider35","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,34,getNumber("slider35"));
   nextQuestion();
   
 });
 onEvent("slider36","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,35,getNumber("slider36"));
   nextQuestion();
   
 });
 onEvent("slider37","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,36,getNumber("slider37"));
   nextQuestion();
   
 });
 onEvent("slider38","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,37,getNumber("slider38"));
   nextQuestion();
   
 });
 onEvent("slider39","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,38,getNumber("slider39"));
   nextQuestion();
   
 });
 onEvent("slider40","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,39,getNumber("slider40"));
   nextQuestion();
   
 });
 onEvent("slider41","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,40,getNumber("slider41"));
   nextQuestion();
   
 });
 onEvent("slider42","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,41,getNumber("slider42"));
   nextQuestion();
   
 });
 onEvent("slider43","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,42,getNumber("slider43"));
   nextQuestion();
   
 });
 onEvent("slider44","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,43,getNumber("slider44"));
   nextQuestion();
   
 });
 onEvent("slider45","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,44,getNumber("slider45"));
   nextQuestion();
   
 });
 onEvent("slider46","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,45,getNumber("slider46"));
   nextQuestion();
   
 });
 onEvent("slider47","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,46,getNumber("slider47"));
   nextQuestion();
   
 });
 onEvent("slider48","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,47,getNumber("slider48"));
   nextQuestion();
   
 });
 onEvent("slider49","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,48,getNumber("slider49"));
   nextQuestion();
   
 });
 onEvent("slider50","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,49,getNumber("slider50"));
   nextQuestion();
   
 });
 onEvent("slider51","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,50,getNumber("slider51"));
   nextQuestion();
   
 });
 onEvent("slider52","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,51,getNumber("slider52"));
   nextQuestion();
   
 });
 onEvent("slider53","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,52,getNumber("slider53"));
   nextQuestion();
   
 });
 onEvent("slider54","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,53,getNumber("slider54"));
   nextQuestion();
   
 });
 onEvent("slider55","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,54,getNumber("slider55"));
   nextQuestion();
   
 });
 onEvent("slider56","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,55,getNumber("slider56"));
   nextQuestion();
   
 });
 onEvent("slider57","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,56,getNumber("slider57"));
   nextQuestion();
   
 });
-onEvent("slider58","change",function(){
-  moveForward(5);
-  insertItem(ans,57,getNumber("slider58"));
-  nextQuestion();
-  
-});
 onEvent("slider59","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,58,getNumber("slider59"));
   nextQuestion();
   
 });
 onEvent("slider60","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,59,getNumber("slider60"));
   nextQuestion();
   
 });
 onEvent("slider61","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,60,getNumber("slider61"));
   nextQuestion();
   
 });
 onEvent("slider62","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,61,getNumber("slider62"));
   nextQuestion();
   
 });
 onEvent("slider63","change",function(){
-  moveForward(5);
+  moveForward(5.5);
   insertItem(ans,62,getNumber("slider63"));
   nextQuestion();
   
 });
-onEvent("slider64","change",function(){
-  moveForward(5);
-  insertItem(ans,63,getNumber("slider64"));
+onEvent("slider58","change",function(){
+  moveForward(5.5);
+  insertItem(ans,63,getNumber("slider58"));
   showElement("button2");
   hideElement("slider64");
   });
